@@ -1,0 +1,229 @@
+/* Base resets and scrollbar behaviour from the original Stitch export */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#main-content {
+  scroll-margin-top: 5rem;
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid #1d52cb;
+  outline-offset: 3px;
+}
+
+footer :focus-visible {
+  outline-color: #ffffff;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #002566;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  box-shadow: 0 8px 24px -4px rgba(18, 59, 139, 0.3);
+  transform: translateY(-200%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+.nav-dropdown.is-open,
+.nav-item.is-open > .nav-dropdown {
+  display: block;
+}
+
+.nav-link.is-active,
+.nav-submenu-link.is-active {
+  color: #1d52cb;
+  font-weight: 600;
+}
+
+.nav-item.is-active > .nav-trigger {
+  color: #1d52cb;
+  font-weight: 600;
+}
+
+.nav-item.is-open .nav-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-cta.is-active,
+.mobile-nav-cta.is-active {
+  background: #002566;
+}
+
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: rgba(14, 27, 50, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 250ms ease,
+    visibility 250ms ease;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  width: min(88vw, 360px);
+  max-width: 100%;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: -16px 0 40px -12px rgba(14, 27, 50, 0.28);
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition:
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 300ms ease;
+}
+
+html.mobile-nav-open,
+body.mobile-nav-open {
+  overflow: hidden;
+}
+
+.mobile-nav-open .mobile-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-nav-open .mobile-drawer {
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.mobile-drawer-nav {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  overscroll-behavior: contain;
+}
+
+.mobile-submenu[hidden] {
+  display: none;
+}
+
+.mobile-nav-trigger[aria-expanded="true"] .nav-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-nav-link.is-active,
+.mobile-nav-submenu-link.is-active {
+  background: #f1f3ff;
+  color: #1d52cb;
+  font-weight: 600;
+}
+
+.mobile-nav-group.is-active > .mobile-nav-trigger {
+  background: #f1f3ff;
+  color: #1d52cb;
+  font-weight: 600;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 9999px;
+  background: #1d52cb;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 8px 24px -6px rgba(18, 59, 139, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease,
+    visibility 200ms ease,
+    background-color 200ms ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: #002566;
+}
+
+.back-to-top.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skip-link,
+  .mobile-backdrop,
+  .mobile-drawer,
+  .back-to-top {
+    transition-duration: 0.01ms;
+  }
+}

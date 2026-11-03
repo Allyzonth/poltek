@@ -1,0 +1,98 @@
+        <section class="py-14 lg:py-20 bg-surface-container-low ">
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+            <div class="rounded-2xl border-2 border-dashed border-surface-container-high bg-surface-container-lowest p-6 lg:p-8">
+              <div class="flex flex-col sm:flex-row items-start gap-4">
+                <span class="material-symbols-outlined text-secondary text-[30px] shrink-0">info</span>
+                <div>
+                  <h2 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Informasi layanan belum tersedia</h2>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Ketentuan, prosedur, jadwal, dan kontak resmi layanan belum tersedia pada project ini. Halaman ini hanya menyiapkan struktur informasi untuk diisi melalui CMS.</p>
+                  <span class="inline-block mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Placeholder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-14 lg:py-20 bg-surface-container-lowest ">
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+            <div class="max-w-3xl mb-10">
+              <div class="inline-flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
+                <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-secondary">Struktur Informasi Layanan</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Informasi yang Akan Ditampilkan</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">Setiap kartu berikut menjadi tempat konten resmi layanan. Tidak ada prosedur yang dikarang pada halaman ini.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Jenis Sertifikasi</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Daftar skema dan jenis sertifikasi profesi belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">verified</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Lembaga Sertifikasi</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Nama lembaga sertifikasi dan mitra belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">assignment_ind</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Persyaratan Peserta</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Persyaratan peserta sertifikasi belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">payments</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Biaya Sertifikasi</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Informasi biaya sertifikasi belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">event</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Jadwal Pelaksanaan</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Jadwal asesmen dan pelatihan belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+              <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container flex flex-col">
+                <div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-[24px]">contact_phone</span>
+                </div>
+                <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Kontak Layanan</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant flex-1">Kontak resmi pengelola sertifikasi belum tersedia.</p>
+                <span class="inline-block self-start mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Belum tersedia</span>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="py-14 lg:py-20 bg-surface-container-low ">
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+            <div class="max-w-3xl mb-10">
+              <div class="inline-flex items-center gap-2 mb-4">
+                <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
+                <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-secondary">Konten Layanan</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Area Konten Resmi</h2>
+  
+            </div>
+            <div class="rounded-2xl border-2 border-dashed border-surface-container-high bg-surface-container-lowest p-8 lg:p-10">
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-secondary text-[28px] shrink-0">workspace_premium</span>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Konten sertifikasi profesi belum tersedia</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">Halaman ini menyediakan struktur untuk memuat informasi resmi sertifikasi profesi. Gunakan CMS untuk menambahkan skema, lembaga, persyaratan, jadwal, biaya, dan kontak resmi.</p>
+                  <span class="inline-block mt-4 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Placeholder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

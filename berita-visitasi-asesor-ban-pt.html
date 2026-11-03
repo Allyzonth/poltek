@@ -1,0 +1,475 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Kegiatan Visitasi Tim Asesor BAN-PT — Politeknik Surabaya</title>
+    <meta name="description" content="Berita, kegiatan, dan pengumuman resmi Politeknik Surabaya." />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Gaya kustom hasil ekstraksi dari file Stitch asli -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Tailwind Play CDN dipertahankan dari kode asli -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind harus dieksekusi tepat setelah CDN -->
+    <script src="js/script.js"></script>
+  </head>
+
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col"
+  >
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+        <header
+      id="site-header"
+      class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-surface-container shadow-[0_1px_8px_rgba(0,37,102,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"
+      >
+        <a
+          class="flex items-center gap-space-md shrink-0"
+          href="index.html"
+          aria-label="Politeknik Surabaya - Beranda"
+        >
+          <img
+            alt="Logo Politeknik Surabaya"
+            class="h-8 w-auto object-contain"
+            src="assets/logo/logo-politeknik-surabaya.jpg"
+          />
+          <div class="hidden sm:flex flex-col">
+            <span
+              class="font-label-lg text-label-lg font-bold text-primary tracking-tight leading-none"
+              >POLITEKNIK SURABAYA</span
+            ><span
+              class="font-caption text-caption text-secondary tracking-widest font-semibold mt-0.5"
+              >DHARMA BAKTI</span
+            >
+          </div>
+        </a>
+        <nav
+          class="hidden xl:flex items-center gap-space-sm"
+          aria-label="Navigasi utama"
+        >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="beranda"
+            data-nav-link
+            href="index.html"
+            >Beranda</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="sertifikasi"
+            data-nav-link
+            href="sertifikasi-profesi.html"
+            >Sertifikasi</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="biaya-pendidikan"
+            data-nav-link
+            href="biaya-pendidikan.html"
+            >Biaya Pendidikan</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="jurnal-mi"
+            data-nav-link
+            href="jurnal-mi.html"
+            >Jurnal MI</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="jurnal-tk"
+            data-nav-link
+            href="jurnal-tk.html"
+            >Jurnal TK</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="jurnal-ka"
+            data-nav-link
+            href="jurnal-ka.html"
+            >Jurnal KA</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="plagiasi"
+            data-nav-link
+            href="layanan-bebas-plagiasi.html"
+            >Plagiasi</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <a
+            class="nav-cta inline-flex shrink-0 items-center justify-center bg-secondary hover:bg-primary text-on-secondary font-label-lg text-label-lg px-space-md py-2.5 rounded-xl shadow-[0_2px_8px_-2px_rgba(18,59,139,0.25)] hover:shadow-[0_4px_12px_-2px_rgba(18,59,139,0.35)] transition-all whitespace-nowrap"
+            data-path="pendaftaran"
+            data-nav-cta
+            href="pendaftaran.html"
+            >Pendaftaran</a
+          >
+          <button
+            id="mobile-nav-toggle"
+            class="xl:hidden flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary transition-colors hover:bg-surface-container-low focus-visible:bg-surface-container-low"
+            type="button"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            data-mobile-nav-open
+          >
+            <span
+              class="material-symbols-outlined text-[24px]"
+              aria-hidden="true"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+        <div
+      id="mobile-nav-backdrop"
+      class="mobile-backdrop"
+      aria-hidden="true"
+    ></div>
+    <aside
+      id="mobile-nav-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu navigasi mobile"
+      aria-hidden="true"
+      inert
+    >
+      <div
+        class="mobile-drawer-header flex h-20 shrink-0 items-center justify-between gap-3 border-b border-surface-container px-margin-mobile"
+      >
+        <a
+          class="flex min-w-0 items-center gap-space-md"
+          href="index.html"
+          aria-label="Politeknik Surabaya - Beranda"
+        >
+          <img
+            alt="Logo Politeknik Surabaya"
+            class="h-8 w-auto shrink-0 object-contain"
+            src="assets/logo/logo-politeknik-surabaya.jpg"
+          />
+          <div class="flex min-w-0 flex-col">
+            <span
+              class="truncate font-label-lg text-label-lg font-bold text-primary tracking-tight leading-none"
+              >POLITEKNIK SURABAYA</span
+            ><span
+              class="font-caption text-caption text-secondary tracking-widest font-semibold mt-0.5"
+              >DHARMA BAKTI</span
+            >
+          </div>
+        </a>
+        <button
+          id="mobile-nav-close"
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary transition-colors hover:bg-surface-container-low"
+          type="button"
+          aria-label="Tutup menu navigasi"
+          data-mobile-nav-close
+        >
+          <span class="material-symbols-outlined text-[24px]" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+      <nav
+        class="mobile-drawer-nav flex-1 overflow-y-auto px-margin-mobile py-4"
+        aria-label="Navigasi mobile"
+      >
+        <div class="space-y-1">
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="index.html"
+            data-path="beranda"
+            data-nav-link
+            >Beranda</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="sertifikasi-profesi.html"
+            data-path="sertifikasi"
+            data-nav-link
+            >Sertifikasi</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="biaya-pendidikan.html"
+            data-path="biaya-pendidikan"
+            data-nav-link
+            >Biaya Pendidikan</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="jurnal-mi.html"
+            data-path="jurnal-mi"
+            data-nav-link
+            >Jurnal MI</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="jurnal-tk.html"
+            data-path="jurnal-tk"
+            data-nav-link
+            >Jurnal TK</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="jurnal-ka.html"
+            data-path="jurnal-ka"
+            data-nav-link
+            >Jurnal KA</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="layanan-bebas-plagiasi.html"
+            data-path="plagiasi"
+            data-nav-link
+            >Plagiasi</a
+          >
+          <a
+            class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary"
+            href="pendaftaran.html"
+            data-path="pendaftaran"
+            data-nav-cta
+            >Pendaftaran</a
+          >
+        </div>
+      </nav>
+    </aside>
+    <main
+      id="main-content"
+      tabindex="-1"
+      class="w-full pt-20 bg-surface flex-1"
+    >
+      <div class="flex flex-col w-full">
+        <div class="max-w-7xl mx-auto w-full px-margin-mobile lg:px-margin pt-8">
+          <nav aria-label="Breadcrumb">
+            <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
+              <li><a class="hover:text-secondary transition-colors" href="index.html">Beranda</a></li>
+              <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
+              <li><a class="hover:text-secondary transition-colors" href="berita.html">Berita Kampus</a></li>
+              <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
+              <li><span aria-current="page" class="text-primary font-semibold">Visitasi Asesor BAN-PT</span></li>
+            </ol>
+          </nav>
+        </div>
+
+        <article class="pt-8 pb-12 bg-surface">
+          <div class="max-w-4xl mx-auto px-margin-mobile lg:px-margin">
+            <a class="inline-flex items-center gap-2 font-label-lg text-label-lg font-bold text-secondary hover:text-primary transition-colors mb-8" href="berita.html">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              Kembali ke Daftar Berita
+            </a>
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low w-fit shadow-sm mb-6">
+              <span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+              <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Arsip Berita 2017</span>
+            </div>
+            <h1 class="font-headline-xl-mobile lg:font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-primary font-bold tracking-tight">Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4">Politeknik Surabaya ’All Out’ Sambut Visitasi Asesor BAN-PT Prof Dr Mahfud Solihin dari UGM Jogjakarta dan Ir Suharyadi Pancono MT dari Politeknik Manufaktur Bandung</p>
+            <figure class="mt-8 overflow-hidden rounded-2xl border border-surface-container bg-surface-container-lowest shadow-sm">
+              <img src="assets/images/berita-visitasi-utama.jpg" alt="Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya" width="1600" height="1600" class="block w-full h-auto object-cover" loading="eager" decoding="async" />
+            </figure>
+          </div>
+        </article>
+
+        <section class="pb-14 lg:pb-20 bg-surface">
+          <div class="max-w-3xl mx-auto px-margin-mobile lg:px-margin">
+            <div class="space-y-6 font-body-lg text-body-lg text-on-surface leading-relaxed">
+              <p>POLITEKNIK Surabaya Dharma Bakti, unit usaha baru di bawah Tristar Group yang berkampus di Jl. Kaliwaron No. 58-60 Surabaya all out menyambut visitasi asesor Badan Akreditasi Nasional-Perguruan Tinggi (BAN-PT) Prof Dr Mahfud Solihin dari UGM Jogjakarta dan Ir Suharyadi Pancono MT dari Politeknik Manufaktur Bandung pada Kamis (07/09/2017) pagi sampai petang kemarin.</p>
+              <p>Kehadiran dua orang asesor di Kampus Politeknik Surabaya Dharma Bakti tersebut di dampingi Sekretaris BAN-PT Dewi Ratnasari Si.Kom. Tiga orang tamu istimewa ini disambut owner Politeknik Surabaya Dharma Bakti Ir Juwono Saroso MM, Direktur Politeknik Surabaya Drs Soetarko Rono Soewito MM, Pengurus Yayasan Dharma Bakti Drs Andrean L. Bandoro MBA, MM bersama jajaran di bawahnya.</p>
+              <p>Dalam pemyambutan itu juga hadir Kaprodi D3 Komputerisasi Akuntansi Neni Kurniati S.Kom., MT, Kaprodi D3 Manajemen Informatika Dewa Gede Rai Mardiana S.Kom., M.Eng., Kaprodi D3 Teknik Komputer Ir Samodra MSc, Ketua LPPM Peter ST, Kepala LPM Effendi M.Pd. dan Kabag BAA Bambang Sutrisno ST.Par.</p>
+              <p>Momentum visitasi dua orang asesor dan sekretaris BAN-PT ke kampus Politeknik Surabaya Dharma Bakti ini dinilai tepat pasca alih kelola lembaga pendidikan tinggi swasta itu dari pemilik lama kepada pemilik baru di bawah Yayasan Dharma Bakti, salah satu yayasan di bawah payung Tristar Group, sejak awal 2017 lalu.</p>
+              <p>Visitasi asesor BAN-PT itu terkait dengan akreditasi institusi lembaga pendidikan tinggi swasta tersebut, mulai dari penilaian aspek kepengurusan, sarana dan prasarana perkuliahan, fasilitas kampus (ruang kuliah, ruang dosen, perpustakaan, lab komputer, lab bahasa asing), sistem rekrutmen dosen dan karyawan (SDM), jumlah dosen, karyawan, mahasiswa dan lulusan (alumni), program studi (jurusan), program penelitian dari dana hibah dikti, pemanfaatan program beasiswa hingga status kepemilikan kampus.</p>
+              <p>Diskusi antara tim asesor yang dipimpin Ir Suharyadi Pancono MT (asesor senior dari BAN-PT) dengan Direktur Politeknik Surabaya Dharma Bakti Drs Soetarko Rono Soewito MM dan jajarannya disaksikan owner Ir Juwono Saroso MM dan pengurus Yayasan Dharma Bakti Drs Andrean L. Bandoro MBA, MM berlangsung serius tapi santai.</p>
+              <p>Tiga orang Kaprodi (D3 Komputerisasi Akuntansi, Manajemen Informatika dan Teknik Komputer) diberi kesempatan untuk presentasi sesuai program studinya masing-masing dan dilanjutkan dengan forum tanya jawab demi perbaikan lembaga pendidikan tinggi itu di masa mendatang.</p>
+              <p>Giliran Kepala LPM, Ketua LPPM maupun Kabag BAA Politeknik Surabaya Dharma Bakti juga mendapat kesempatan untuk mempresentasikan laporannya masing-masing. Usai presentasi tersebut, tim asesor memberikan sejumlah saran dan masukan kepada Kepala LPM, Ketua LPPM dan Kabag BAAK, demi penyempurnaan pelaksanaan tugas dan tanggung jawab sesuai tupoksinya masing-masing.</p>
+              <p>Sementara itu, asesor BAN-PT dari UGM Jogjakarta, Prof Dr Mahfud Solihin berbagi tugas dengan koleganya untuk mewawancarai dua orang perwakilan alumni Politeknik Surabaya, Andini Dewi Fransiska (22) dan Onkry Victor Suryoasmoro (27) yang baru saja diwisuda pada 14 Februari 2017 lalu.</p>
+              <p>Asesor BAN-PT dari UGM Jogjakarta itu juga berkesempatan meng-interview dan saling bertukar pikiran dengan tiga perwakilan perusahaan yang menjadi mitra kerja Politeknik Surabaya, yakni Anton Eko Yulianto (Direktur CV Global Tira), David Pitono (Unit Business Manager Logistic PT Krea Indonesia), Ahmad Zaini SE dan Dina R (Direktur dan Sekretaris CV Laboratorindo Jaya Perkasa).</p>
+              <p>Saat interview dengan alumni maupun mitra kerja Politeknik Surabaya, Prof Dr Mahfud Solihin, asesor BAN-PT tersebut selalu di dampingi Leli Hariani S.Kom dari Bagian Administrasi Akademik (BAA) Politeknik Surabaya Dharma Bakti.</p>
+              <p>Dalam kesempatan itu, tim asesor dari BAN-PT tersebut juga menyempatkan diri untuk mengadakan tour the campus dengan di dampingi owner Politeknik Surabaya Dharma Bakti Ir Juwono Saroso MM dan Drs Soetarko Rono Soewito MM, Direktur Politeknik Surabaya Dharma Bakti, usai makan siang bersama.</p>
+              <p>Anda tertarik menjadi calon mahasiswa baru pada Program Profesional Siap Kerja di kampus Politeknik Surabaya, silakan hubungi Tim Marketing Politeknik Surabaya Jl. Kaliwaron No. 58-60 Surabaya, Telp. (031) 5999593. (ahn)</p>
+            </div>
+
+            <div class="mt-10">
+              <figure class="overflow-hidden rounded-2xl border border-surface-container bg-surface-container-lowest shadow-sm">
+                <img src="assets/images/berita-visitasi-pendamping-1.jpg" alt="Dokumentasi Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya" width="1600" height="1600" class="block w-full h-auto object-cover" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-surface-container">
+              <a class="inline-flex items-center gap-2 bg-secondary hover:bg-primary text-on-secondary font-label-lg text-label-lg px-6 py-3 rounded-xl font-semibold transition-colors" href="berita.html">
+                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                Kembali ke Daftar Berita
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      type="button"
+      aria-label="Kembali ke atas"
+      aria-hidden="true"
+      tabindex="-1"
+      data-back-to-top
+    >
+      <span class="material-symbols-outlined text-[22px]" aria-hidden="true"
+        >arrow_upward</span
+      >
+    </button>
+        <footer class="w-full bg-primary-container text-on-primary mt-auto">
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-space-lg mb-space-xl"
+        >
+          <div class="md:col-span-2 lg:col-span-5 space-y-5">
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white p-2 shadow-sm"
+              >
+                <img
+                  alt="Logo Politeknik Surabaya"
+                  class="h-full w-full object-contain"
+                  src="assets/logo/logo-politeknik-surabaya.jpg"
+                />
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-label-lg text-label-lg font-bold text-on-primary tracking-tight leading-tight"
+                  >POLITEKNIK SURABAYA</span
+                ><span
+                  class="font-caption text-caption text-on-primary-container tracking-widest font-semibold mt-0.5"
+                  >DHARMA BAKTI</span
+                >
+              </div>
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-surface-container-high max-w-md leading-relaxed"
+            >
+              Institusi pendidikan tinggi vokasi yang berkomitmen melahirkan
+              lulusan berdaya saing global, terampil, dan adaptif terhadap
+              transformasi teknologi digital.
+            </p>
+          </div>
+          <div class="lg:col-span-3 space-y-4">
+            <h3
+              class="font-label-lg text-label-lg font-bold text-on-primary uppercase tracking-wider"
+            >
+              Navigasi
+            </h3>
+            <ul
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2 font-body-sm text-body-sm text-surface-container-high"
+            >
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="index.html#program-studi-pilihan">Program Studi</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-4 space-y-4">
+            <h3
+              class="font-label-lg text-label-lg font-bold text-on-primary uppercase tracking-wider"
+            >
+              Kontak Resmi
+            </h3>
+            <ul
+              class="space-y-2.5 font-body-sm text-body-sm text-surface-container-high"
+            >
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="mailto:politekniksby@gmail.com"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] shrink-0 text-on-primary-container"
+                    >mail</span
+                  ><span class="break-all">Email: politekniksby@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/628123259310"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 aria-label="Hubungi WhatsApp Marketing 1 Politeknik Surabaya di +62 812-3253-9310">
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Marketing 1: +62 812-3253-9310</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/6281330350822"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 aria-label="Hubungi WhatsApp Marketing 2 Politeknik Surabaya di +62 813-3035-0822">
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Marketing 2: +62 813-3035-0822</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/6285731112886"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 aria-label="Hubungi WhatsApp Akademik Politeknik Surabaya di +62 857-3111-2886">
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Akademik: +62 857-3111-2886</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-space-md border-t border-surface-container-highest/20 flex flex-col md:flex-row items-center justify-between gap-space-sm text-center md:text-left font-caption text-caption text-surface-container-high"
+        >
+          <div>&copy; 2025 Politeknik Surabaya. Hak Cipta Dilindungi.</div>
+          <div>Politeknik Surabaya (Dharma Bakti)</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
