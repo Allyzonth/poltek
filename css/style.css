@@ -33,7 +33,7 @@ html {
 }
 
 :focus-visible {
-  outline: 3px solid #1d52cb;
+  outline: 3px solid #b00000;
   outline-offset: 3px;
 }
 
@@ -48,14 +48,14 @@ footer :focus-visible {
   z-index: 100;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
-  background: #002566;
+  background: #800000;
   color: #ffffff;
   font-family: Inter, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
-  box-shadow: 0 8px 24px -4px rgba(18, 59, 139, 0.3);
+  box-shadow: 0 8px 24px -4px rgba(128, 0, 0, 0.3);
   transform: translateY(-200%);
   transition: transform 180ms ease;
 }
@@ -76,12 +76,12 @@ footer :focus-visible {
 
 .nav-link.is-active,
 .nav-submenu-link.is-active {
-  color: #1d52cb;
+  color: #b00000;
   font-weight: 600;
 }
 
 .nav-item.is-active > .nav-trigger {
-  color: #1d52cb;
+  color: #b00000;
   font-weight: 600;
 }
 
@@ -91,14 +91,15 @@ footer :focus-visible {
 
 .nav-cta.is-active,
 .mobile-nav-cta.is-active {
-  background: #002566;
+  background: #800000;
+  color: #ffffff;
 }
 
 .mobile-backdrop {
   position: fixed;
   inset: 0;
   z-index: 55;
-  background: rgba(14, 27, 50, 0.55);
+  background: rgba(23, 23, 23, 0.55);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -118,7 +119,7 @@ footer :focus-visible {
   max-width: 100%;
   flex-direction: column;
   background: #ffffff;
-  box-shadow: -16px 0 40px -12px rgba(14, 27, 50, 0.28);
+  box-shadow: -16px 0 40px -12px rgba(23, 23, 23, 0.28);
   visibility: hidden;
   pointer-events: none;
   transform: translateX(100%);
@@ -159,14 +160,14 @@ body.mobile-nav-open {
 
 .mobile-nav-link.is-active,
 .mobile-nav-submenu-link.is-active {
-  background: #f1f3ff;
-  color: #1d52cb;
+  background: #fbeeee;
+  color: #b00000;
   font-weight: 600;
 }
 
 .mobile-nav-group.is-active > .mobile-nav-trigger {
-  background: #f1f3ff;
-  color: #1d52cb;
+  background: #fbeeee;
+  color: #b00000;
   font-weight: 600;
 }
 
@@ -182,10 +183,10 @@ body.mobile-nav-open {
   justify-content: center;
   border: 0;
   border-radius: 9999px;
-  background: #1d52cb;
+  background: #b00000;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 8px 24px -6px rgba(18, 59, 139, 0.45);
+  box-shadow: 0 8px 24px -6px rgba(128, 0, 0, 0.35);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -205,7 +206,7 @@ body.mobile-nav-open {
 }
 
 .back-to-top:hover {
-  background: #002566;
+  background: #c00000;
 }
 
 .back-to-top.is-hidden {
@@ -225,5 +226,61 @@ body.mobile-nav-open {
   .mobile-drawer,
   .back-to-top {
     transition-duration: 0.01ms;
+  }
+}
+
+/* ==========================================================================
+   Halaman Sertifikasi Profesi
+   Dipindahkan dari blok <style> di sertifikasi-profesi.html agar seluruh
+   styling aplikasi terpusat di css/style.css.
+   Catatan: selector .cert-panel ditingkatkan specificity-nya ke
+   .cert-accordion .cert-panel karena style.css dimuat sebelum CDN Tailwind,
+   sehingga nilai transition 600ms tetap menang atas utility duration-500.
+   ========================================================================== */
+.cert-accordion.is-open .cert-arrow { transform: rotate(180deg); }
+.cert-accordion.is-open .cert-trigger { background-color: #fbeeee; }
+.cert-accordion .cert-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cert-accordion.is-open .cert-panel {
+  max-height: 2600px;
+}
+.cert-gallery {
+  max-width: 68rem;
+  margin-inline: auto;
+  align-items: start;
+}
+.cert-gallery-card {
+  overflow: hidden;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.875rem;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(128, 0, 0, 0.08);
+}
+.cert-gallery-button {
+  display: block;
+  width: 100%;
+  background: #f1f3f5;
+  cursor: zoom-in;
+}
+.cert-gallery-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cert-lightbox-image {
+  display: block;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 7rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+@media (min-width: 640px) {
+  .cert-lightbox-image {
+    max-width: calc(100vw - 4rem);
+    max-height: calc(100vh - 7rem);
   }
 }

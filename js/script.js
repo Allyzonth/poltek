@@ -4,53 +4,54 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        "surface-variant": "#d7e2ff",
-        "inverse-surface": "#243048",
-        "outline-variant": "#c4c6d3",
-        primary: "#002566",
-        "on-tertiary-container": "#ff8a88",
-        "tertiary-fixed": "#ffdad8",
-        "surface-container-low": "#f1f3ff",
-        "on-tertiary-fixed": "#410006",
-        "primary-fixed": "#dae2ff",
-        "tertiary-container": "#860017",
-        "surface-container-high": "#e0e8ff",
-        "surface-container-highest": "#d7e2ff",
-        "inverse-on-surface": "#ecf0ff",
-        "on-primary-fixed-variant": "#1c4292",
-        "secondary-fixed-dim": "#b4c5ff",
-        secondary: "#1d52cb",
-        "secondary-fixed": "#dbe1ff",
-        "primary-container": "#123b8b",
+        "surface-variant": "#f2f2f2",
+        "inverse-surface": "#292929",
+        "outline-variant": "#d6d6d6",
+        primary: "#b00000",
+        "primary-hover": "#c00000",
+        "on-tertiary-container": "#800000",
+        "tertiary-fixed": "#f4dada",
+        "surface-container-low": "#f7f7f7",
+        "on-tertiary-fixed": "#400000",
+        "primary-fixed": "#f5dada",
+        "tertiary-container": "#800000",
+        "surface-container-high": "#f2f2f2",
+        "surface-container-highest": "#e8e8e8",
+        "inverse-on-surface": "#f5f5f5",
+        "on-primary-fixed-variant": "#800000",
+        "secondary-fixed-dim": "#d6a900",
+        secondary: "#f0c000",
+        "secondary-fixed": "#fff2b3",
+        "primary-container": "#800000",
         "error-container": "#ffdad6",
-        "surface-container": "#e8eeff",
+        "surface-container": "#f5f5f5",
         error: "#ba1a1a",
         "on-tertiary": "#ffffff",
-        "on-secondary-fixed-variant": "#003daa",
-        outline: "#747783",
-        "on-tertiary-fixed-variant": "#93001b",
-        "surface-bright": "#f9f9ff",
-        "surface-tint": "#395bab",
+        "on-secondary-fixed-variant": "#594700",
+        outline: "#747474",
+        "on-tertiary-fixed-variant": "#800000",
+        "surface-bright": "#ffffff",
+        "surface-tint": "#b00000",
         "on-error": "#ffffff",
-        "on-secondary-container": "#fefcff",
-        surface: "#f9f9ff",
+        "on-secondary-container": "#171717",
+        surface: "#ffffff",
         "on-error-container": "#93000a",
-        "on-primary-fixed": "#001848",
-        "on-background": "#0e1b32",
-        "primary-fixed-dim": "#b2c5ff",
-        background: "#f9f9ff",
-        tertiary: "#5c000d",
-        "tertiary-fixed-dim": "#ffb3b0",
-        "on-primary-container": "#8aa9ff",
+        "on-primary-fixed": "#400000",
+        "on-background": "#171717",
+        "primary-fixed-dim": "#e3a3a3",
+        background: "#ffffff",
+        tertiary: "#800000",
+        "tertiary-fixed-dim": "#e6b3b3",
+        "on-primary-container": "#ffffff",
         "on-primary": "#ffffff",
         "surface-container-lowest": "#ffffff",
-        "on-secondary-fixed": "#00174c",
-        "inverse-primary": "#b2c5ff",
-        "surface-dim": "#cddaf9",
-        "on-surface": "#0e1b32",
-        "secondary-container": "#3f6de5",
-        "on-secondary": "#ffffff",
-        "on-surface-variant": "#444651",
+        "on-secondary-fixed": "#171717",
+        "inverse-primary": "#f0c000",
+        "surface-dim": "#e8e8e8",
+        "on-surface": "#171717",
+        "secondary-container": "#f0c000",
+        "on-secondary": "#171717",
+        "on-surface-variant": "#444444",
       },
       borderRadius: {
         DEFAULT: "0.25rem",
@@ -612,5 +613,222 @@ tailwind.config = {
     document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
+  }
+})();
+
+// Formulir pendaftaran: validasi nomor telepon dan pengiriman Web3Forms.
+(() => {
+  "use strict";
+
+  function initRegistrationForm() {
+    var form = document.getElementById("registration-form");
+    var phone = document.getElementById("applicant-phone");
+    var submitButton = document.getElementById("registration-submit");
+    var status = document.getElementById("registration-status");
+    var successPanel = document.getElementById("registration-success");
+    var successTitle = document.getElementById("registration-success-title");
+    var configNotice = document.getElementById("registration-config-notice");
+    var accessKeyConfig = document.querySelector('meta[name="web3forms-access-key"]');
+    if (!form || !phone || !submitButton || !status || !successPanel || !successTitle || !configNotice || !accessKeyConfig) return;
+
+    var submitting = false;
+    if (!accessKeyConfig.content.trim()) configNotice.classList.remove("hidden");
+
+    function validatePhone() {
+      var value = phone.value.trim();
+      var digits = value.replace(/\D/g, "");
+      var validFormat = /^\+?[0-9][0-9\s().-]{7,18}$/.test(value);
+      phone.setCustomValidity(
+        value && (!validFormat || digits.length < 9 || digits.length > 15)
+          ? "Masukkan nomor telepon yang valid dengan 9 sampai 15 digit."
+          : ""
+      );
+    }
+
+    function showStatus(message, isError) {
+      status.textContent = message;
+      status.classList.remove("hidden", "bg-red-50", "text-red-800", "bg-green-50", "text-green-800");
+      status.classList.add(isError ? "bg-red-50" : "bg-green-50", isError ? "text-red-800" : "text-green-800");
+    }
+
+    phone.addEventListener("input", validatePhone);
+    phone.addEventListener("blur", validatePhone);
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      if (submitting) return;
+
+      validatePhone();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      var accessKey = accessKeyConfig.content.trim();
+      if (!accessKey) {
+        showStatus(
+          "Pengiriman belum aktif karena Access Key Web3Forms belum dikonfigurasi. Data Anda belum dikirim. Silakan coba kembali setelah Access Key untuk alamat penerima kampus yang telah dikonfirmasi tersedia.",
+          true
+        );
+        return;
+      }
+
+      configNotice.classList.add("hidden");
+      submitting = true;
+      submitButton.disabled = true;
+      submitButton.setAttribute("aria-busy", "true");
+      submitButton.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]" aria-hidden="true">progress_activity</span><span>Mengirim formulir...</span>';
+      status.classList.add("hidden");
+
+      var formData = new FormData(form);
+      var payload = {
+        access_key: accessKey,
+        subject: "Pendaftaran Mahasiswa Baru - Politeknik Surabaya",
+        from_name: "Politeknik Surabaya",
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        program_studi: formData.get("program_studi")
+      };
+
+      try {
+        var response;
+        try {
+          response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: JSON.stringify(payload)
+          });
+        } catch (error) {
+          throw new Error("Layanan pengiriman tidak dapat dihubungi. Periksa koneksi internet Anda, lalu coba kembali.");
+        }
+
+        var result;
+        try {
+          result = await response.json();
+        } catch (error) {
+          throw new Error("Respons layanan pengiriman tidak dapat dibaca. Silakan coba kembali.");
+        }
+        if (
+          !response.ok ||
+          !result ||
+          typeof result !== "object" ||
+          result.success !== true
+        ) {
+          throw new Error(
+            result &&
+              typeof result.message === "string" &&
+              result.message
+              ? result.message
+              : "Server belum mengonfirmasi pengiriman formulir."
+          );
+        }
+
+        form.reset();
+        form.classList.add("hidden");
+        successPanel.classList.remove("hidden");
+        successTitle.focus();
+        successPanel.scrollIntoView({ behavior: "smooth", block: "center" });
+      } catch (error) {
+        var detail = error instanceof Error ? error.message : "";
+        showStatus(
+          "Formulir gagal dikirim. " +
+            (detail || "Periksa koneksi internet Anda, lalu coba kembali."),
+          true
+        );
+      } finally {
+        submitting = false;
+        submitButton.disabled = false;
+        submitButton.removeAttribute("aria-busy");
+        submitButton.innerHTML = '<span class="material-symbols-outlined text-[20px]" aria-hidden="true">send</span><span>Kirim Formulir Pendaftaran</span>';
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initRegistrationForm, { once: true });
+  } else {
+    initRegistrationForm();
+  }
+})();
+
+// Sertifikasi profesi: accordion sertifikat dan lightbox pratinjau dokumen.
+(() => {
+  "use strict";
+
+  function initCertAccordion() {
+    var accordion = document.querySelector("[data-cert-accordion]");
+    if (!accordion) return;
+    var trigger = accordion.querySelector(".cert-trigger");
+    var panel = accordion.querySelector(".cert-panel");
+    if (!trigger || !panel) return;
+
+    trigger.addEventListener("click", function () {
+      var isOpen = accordion.classList.toggle("is-open");
+      trigger.setAttribute("aria-expanded", String(isOpen));
+      panel.setAttribute("aria-hidden", String(!isOpen));
+    });
+  }
+
+  function initCertLightbox() {
+    var lightbox = document.getElementById("cert-lightbox");
+    var lightboxImg = document.getElementById("cert-lightbox-img");
+    var closeBtn = document.getElementById("cert-lightbox-close");
+    if (!lightbox || !lightboxImg || !closeBtn) return;
+    var lastOpenedButton = null;
+
+    function open(src, alt, button) {
+      lastOpenedButton = button;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || "Dokumen sertifikat";
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    }
+
+    function close() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImg.src = "";
+      document.body.style.overflow = "";
+      if (lastOpenedButton) lastOpenedButton.focus();
+    }
+
+    document.querySelectorAll("[data-lightbox-src]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        open(
+          btn.getAttribute("data-lightbox-src"),
+          btn.getAttribute("data-lightbox-alt"),
+          btn
+        );
+      });
+    });
+
+    closeBtn.addEventListener("click", close);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) close();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
+        close();
+      }
+    });
+  }
+
+  function initCertificationPage() {
+    initCertAccordion();
+    initCertLightbox();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initCertificationPage, { once: true });
+  } else {
+    initCertificationPage();
   }
 })();
