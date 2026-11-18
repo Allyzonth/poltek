@@ -1,0 +1,884 @@
+﻿<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Informasi Kampus | Politeknik Surabaya</title>
+    <meta
+      name="description"
+      content="Pusat informasi resmi Politeknik Surabaya — berita kampus, kegiatan civitas akademika, dan informasi terkini seputar Politeknik Surabaya."
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Gaya kustom hasil ekstraksi dari file Stitch asli -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Tailwind Play CDN dipertahankan dari kode asli -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind harus dieksekusi tepat setelah CDN -->
+    <script src="js/script.js"></script>
+  </head>
+
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col"
+  >
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <!-- ═══════════════════════════════════════════════════════
+         HEADER — identik dengan halaman aktif lainnya
+    ════════════════════════════════════════════════════════════ -->
+    <header
+      id="site-header"
+      class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-surface-container shadow-[0_1px_8px_rgba(23,23,23,0.06)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"
+      >
+        <a
+          class="flex items-center gap-space-md shrink-0"
+          href="index.html"
+          aria-label="Politeknik Surabaya - Beranda"
+        >
+          <img
+            alt="Logo Politeknik Surabaya"
+            class="h-8 w-auto object-contain"
+            src="assets/logo/Logo_Baru.png"
+          />
+          <div class="hidden sm:flex flex-col">
+            <span
+              class="font-label-lg text-label-lg font-bold text-primary tracking-tight leading-none"
+              >POLITEKNIK SURABAYA</span
+            >
+          </div>
+        </a>
+        <nav
+          class="hidden xl:flex items-center gap-space-sm"
+          aria-label="Navigasi utama"
+        >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="beranda"
+            data-nav-link
+            href="index.html"
+            >Beranda</a
+          >
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="info"
+            data-nav-link
+            href="info.html"
+            >Info</a
+          >
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
+          >
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+          <a
+            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+            data-path="jurnal"
+            data-nav-link
+            href="jurnal.html"
+            >Jurnal</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <a
+            class="nav-cta inline-flex shrink-0 items-center justify-center bg-secondary hover:bg-primary-hover text-on-secondary hover:text-on-primary font-label-lg text-label-lg px-space-md py-2.5 rounded-xl shadow-[0_2px_8px_-2px_rgba(128,0,0,0.25)] hover:shadow-[0_4px_12px_-2px_rgba(128,0,0,0.35)] transition-all whitespace-nowrap"
+            data-path="pendaftaran"
+            data-nav-cta
+            href="pendaftaran.html"
+            >Pendaftaran</a
+          >
+          <button
+            id="mobile-nav-toggle"
+            class="xl:hidden flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary transition-colors hover:bg-surface-container-low focus-visible:bg-surface-container-low"
+            type="button"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            data-mobile-nav-open
+          >
+            <span
+              class="material-symbols-outlined text-[24px]"
+              aria-hidden="true"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════
+         MOBILE BACKDROP
+    ════════════════════════════════════════════════════════════ -->
+    <div
+      id="mobile-nav-backdrop"
+      class="mobile-backdrop"
+      aria-hidden="true"
+    ></div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         MOBILE DRAWER
+    ════════════════════════════════════════════════════════════ -->
+    <aside
+      id="mobile-nav-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menu navigasi mobile"
+      aria-hidden="true"
+      inert
+    >
+      <div
+        class="mobile-drawer-header flex h-20 shrink-0 items-center justify-between gap-3 border-b border-surface-container px-margin-mobile"
+      >
+        <a
+          class="flex min-w-0 items-center gap-space-md"
+          href="index.html"
+          aria-label="Politeknik Surabaya - Beranda"
+        >
+          <img
+            alt="Logo Politeknik Surabaya"
+            class="h-8 w-auto shrink-0 object-contain"
+            src="assets/logo/Logo_Baru.png"
+          />
+          <div class="flex min-w-0 flex-col">
+            <span
+              class="truncate font-label-lg text-label-lg font-bold text-primary tracking-tight leading-none"
+              >POLITEKNIK SURABAYA</span
+            >
+          </div>
+        </a>
+        <button
+          id="mobile-nav-close"
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary transition-colors hover:bg-surface-container-low"
+          type="button"
+          aria-label="Tutup menu navigasi"
+          data-mobile-nav-close
+        >
+          <span class="material-symbols-outlined text-[24px]" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+      <nav
+        class="mobile-drawer-nav flex-1 overflow-y-auto px-margin-mobile py-4"
+        aria-label="Navigasi mobile"
+      >
+        <div class="space-y-1">
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="index.html"
+            data-path="beranda"
+            data-nav-link
+            >Beranda</a
+          >
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="info.html"
+            data-path="info"
+            data-nav-link
+            >Info</a
+          >
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+          <a
+            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+            href="jurnal.html"
+            data-path="jurnal"
+            data-nav-link
+            >Jurnal</a
+          >
+          <a
+            class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary-hover"
+            href="pendaftaran.html"
+            data-path="pendaftaran"
+            data-nav-cta
+            >Pendaftaran</a
+          >
+        </div>
+      </nav>
+    </aside>
+
+    <!-- ═══════════════════════════════════════════════════════
+         MAIN
+    ════════════════════════════════════════════════════════════ -->
+    <main
+      id="main-content"
+      tabindex="-1"
+      class="w-full pt-20 bg-surface flex-1"
+    >
+      <div class="flex flex-col w-full">
+
+        <!-- ───────────────────────────────────────────────────
+             HERO
+        ──────────────────────────────────────────────────────── -->
+        <section class="relative overflow-hidden bg-surface py-14 lg:py-20">
+          <!-- Background accent blobs -->
+          <div
+            class="absolute -top-32 right-[-8%] w-[560px] h-[560px] rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"
+          ></div>
+          <div
+            class="absolute top-1/2 left-[-10%] w-[420px] h-[420px] rounded-full bg-surface-variant/40 blur-2xl pointer-events-none -z-10"
+          ></div>
+
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="mb-8">
+              <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
+                <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
+                <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
+                <li><span aria-current="page" class="text-primary font-semibold">Informasi Kampus</span></li>
+              </ol>
+            </nav>
+
+            <div class="max-w-3xl">
+              <!-- Label -->
+              <div
+                class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low w-fit shadow-sm mb-5"
+              >
+                <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+                <span
+                  class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase"
+                >
+                  INFORMASI KAMPUS
+                </span>
+              </div>
+
+              <!-- H1 -->
+              <h1
+                class="font-display-hero-mobile lg:font-headline-xl text-display-hero-mobile lg:text-headline-xl text-on-surface tracking-tight leading-tight mb-5"
+              >
+                Informasi dan Kabar<br class="hidden sm:block" />
+                <span class="text-primary">Politeknik Surabaya</span>
+              </h1>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Temukan berita, kegiatan, pengumuman, dan berbagai informasi
+                terkini seputar Politeknik Surabaya.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ───────────────────────────────────────────────────
+             SECTION: BERITA KAMPUS
+        ──────────────────────────────────────────────────────── -->
+        <section id="berita-kampus" class="py-16 lg:py-24 bg-surface">
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+
+            <!-- Section header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+              <div>
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold block mb-1"
+                >
+                  CERITA &amp; INFORMASI
+                </span>
+                <h2
+                  class="font-headline-xl text-headline-xl text-primary font-bold"
+                >
+                  Berita Kampus
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+                  Ikuti perkembangan, informasi, dan kabar terbaru dari
+                  lingkungan Politeknik Surabaya.
+                </p>
+              </div>
+            </div>
+
+            <!-- News grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <!-- ── Berita Utama (featured, full width) ── -->
+              <article
+                class="md:col-span-2 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow"
+              >
+                <div class="md:w-5/12 relative aspect-[16/10] md:aspect-auto">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya"
+                    src="assets/images/berita-visitasi-utama.jpg"
+                  />
+                  <span
+                    class="absolute top-4 left-4 bg-primary text-on-primary text-caption font-bold px-3 py-1 rounded-full"
+                  >
+                    Kegiatan Kampus
+                  </span>
+                </div>
+                <div class="p-6 md:p-8 md:w-7/12 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-caption text-caption text-outline mb-2 block"
+                      >Arsip Berita 2017</span
+                    >
+                    <h3
+                      class="font-headline-md text-headline-md font-bold text-primary mb-3 group-hover:text-primary transition-colors"
+                    >
+                      Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik
+                      Surabaya
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-4"
+                    >
+                      Politeknik Surabaya menyambut visitasi asesor BAN-PT
+                      Prof Dr Mahfud Solihin dari UGM Jogjakarta dan Ir
+                      Suharyadi Pancono MT dari Politeknik Manufaktur Bandung
+                      pada Kamis (07/09/2017).
+                    </p>
+                  </div>
+                  <a
+                    class="font-label-lg text-label-lg font-semibold text-primary inline-flex items-center gap-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
+                    href="berita-visitasi-asesor-ban-pt.html"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined text-[16px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+              </article>
+
+              <!-- ── Berita 2 ── -->
+              <article
+                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
+              >
+                <div class="relative aspect-[16/10]">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Dari Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya"
+                    src="assets/images/berita-validasi-utama.jpg"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-secondary-container text-on-secondary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                  >
+                    Akreditasi
+                  </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <span
+                      class="font-caption text-caption text-outline mb-1 block"
+                      >Arsip Berita 2017</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
+                    >
+                      Dari Visitasi Tim Asesor BAN-PT di Kampus Politeknik
+                      Surabaya
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
+                    >
+                      Berkas Laporan Berita Acara Pemeriksaan (BAP) hasil
+                      visitasi tim asesor BAN-PT akan divalidasi lebih lanjut
+                      di Kantor BAN-PT Jakarta sebelum diplenokan.
+                    </p>
+                  </div>
+                  <a
+                    class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
+                    href="berita-validasi-bap-visitasi.html"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+              </article>
+
+              <!-- ── Berita 3 ── -->
+              <article
+                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
+              >
+                <div class="relative aspect-[16/10]">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Politeknik Surabaya Siap Berkolaborasi dengan Politeknik NSC Surabaya"
+                    src="assets/images/berita-kolaborasi-utama.jpg"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-surface-variant text-primary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                  >
+                    Kerja Sama
+                  </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <span
+                      class="font-caption text-caption text-outline mb-1 block"
+                      >Arsip Berita 2017</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
+                    >
+                      Politeknik Surabaya Siap Berkolaborasi dengan Politeknik
+                      NSC Surabaya
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
+                    >
+                      Ketua Yayasan Surabaya Ir Juwono Saroso MM dan Direktur
+                      Politeknik NSC Surabaya Eko Tjiptojuwono SE, MM.,
+                      sepakat menandatangani naskah MoU.
+                    </p>
+                  </div>
+                  <a
+                    class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
+                    href="berita-kolaborasi-politeknik-nsc.html"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+              </article>
+
+              <!-- ── Berita 4 ── -->
+              <article
+                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
+              >
+                <div class="relative aspect-[16/10]">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Dua Staf Pengajar Politeknik Surabaya Dikuliahkan S2 di STTS"
+                    src="assets/images/berita-staf-s2-utama.jpg"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-surface-variant text-primary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                  >
+                    SDM &amp; Dosen
+                  </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <span
+                      class="font-caption text-caption text-outline mb-1 block"
+                      >Arsip Berita 2017</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
+                    >
+                      Dua Staf Pengajar Politeknik Surabaya Dikuliahkan S2 di
+                      STTS
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
+                    >
+                      Usai Akreditasi Institusi Politeknik Surabaya, dua staf
+                      pengajar yakni Peter ST dan Luthfi Alwi ST mulai
+                      mengambil kuliah Pascasarjana (S2) di Sekolah Tinggi
+                      Teknik Surabaya (STTS).
+                    </p>
+                  </div>
+                  <a
+                    class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
+                    href="berita-staf-pengajar-s2-stts.html"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+              </article>
+
+              <!-- ── Berita 5 ── -->
+              <article
+                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
+              >
+                <div class="relative aspect-[16/10]">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Upaya Optimalisasi Ruangan di Kampus Politeknik Surabaya"
+                    src="assets/images/berita-optimalisasi-utama.jpg"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-surface-variant text-primary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                  >
+                    Kampus
+                  </span>
+                </div>
+                <div class="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <span
+                      class="font-caption text-caption text-outline mb-1 block"
+                      >Arsip Berita 2017</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
+                    >
+                      Upaya Optimalisasi Ruangan di Kampus Politeknik Surabaya
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
+                    >
+                      Buka Kelas Baru untuk Pelatihan Biodiesel, Bioetanol,
+                      Electro Plating hingga Pelatihan Teknologi Pangan di
+                      lantai 4 Kampus Politeknik Surabaya Jl. Kaliwaron
+                      No. 58-60.
+                    </p>
+                  </div>
+                  <a
+                    class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
+                    href="berita-optimalisasi-ruangan-kampus.html"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >chevron_right</span
+                    >
+                  </a>
+                </div>
+              </article>
+
+            </div>
+            <!-- /news grid -->
+          </div>
+        </section>
+
+        <!-- ───────────────────────────────────────────────────
+             SECTION: INFO CEPAT — akses layanan kampus
+        ──────────────────────────────────────────────────────── -->
+        <section class="py-16 lg:py-20 bg-surface-container-low">
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold block mb-2"
+              >
+                LAYANAN KAMPUS
+              </span>
+              <h2
+                class="font-headline-xl text-headline-xl text-primary font-bold mb-3"
+              >
+                Informasi yang Kamu Butuhkan
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Akses cepat ke layanan akademik, program studi, publikasi
+                jurnal, dan informasi pendaftaran Politeknik Surabaya.
+              </p>
+            </div>
+
+            <!-- Lima akses cepat: Info, Prodi, Visi & Misi, Jurnal, Pendaftaran -->
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-6">
+              <!-- Item 1: Info -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="info.html"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >info</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Info
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Berita dan informasi kampus
+                </p>
+              </a>
+              <!-- Item 2: Prodi -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="index.html#program-studi-pilihan"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >school</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Prodi
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Jelajahi program studi pilihan
+                </p>
+              </a>
+              <!-- Item 3: Visi & Misi -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="visi-misi.html"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >flag</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Visi &amp; Misi
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Komitmen &amp; tata nilai kampus
+                </p>
+              </a>
+              <!-- Item 4: Jurnal -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="jurnal.html"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >menu_book</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Jurnal
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Publikasi jurnal ilmiah kampus
+                </p>
+              </a>
+              <!-- Item 5: Pendaftaran -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary col-span-2 md:col-span-1"
+                href="pendaftaran.html"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >how_to_reg</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Pendaftaran
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Informasi penerimaan mahasiswa baru
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Back to top -->
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      type="button"
+      aria-label="Kembali ke atas"
+      aria-hidden="true"
+      tabindex="-1"
+      data-back-to-top
+    >
+      <span class="material-symbols-outlined text-[22px]" aria-hidden="true"
+        >arrow_upward</span
+      >
+    </button>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FOOTER — identik dengan halaman aktif lainnya
+    ════════════════════════════════════════════════════════════ -->
+    <footer class="w-full bg-primary-container text-on-primary mt-auto">
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-space-lg mb-space-xl"
+        >
+          <div class="md:col-span-2 lg:col-span-5 space-y-5">
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white p-2 shadow-sm"
+              >
+                <img
+                  alt="Logo Politeknik Surabaya"
+                  class="h-full w-full object-contain"
+                  src="assets/logo/Logo_Baru.png"
+                />
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-label-lg text-label-lg font-bold text-on-primary tracking-tight leading-tight"
+                  >POLITEKNIK SURABAYA</span
+                >
+              </div>
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-surface-container-high max-w-md leading-relaxed"
+            >
+              Institusi pendidikan tinggi vokasi yang berkomitmen melahirkan
+              lulusan berdaya saing global, terampil, dan adaptif terhadap
+              transformasi teknologi digital.
+            </p>
+          </div>
+          <div class="lg:col-span-3 space-y-4">
+            <h2
+              class="font-label-lg text-label-lg font-bold text-on-primary uppercase tracking-wider"
+            >
+              Navigasi
+            </h2>
+            <ul
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2 font-body-sm text-body-sm text-surface-container-high"
+            >
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="info.html">Info</a>
+              </li>
+              <li class="pt-3 font-label-md text-label-md font-semibold uppercase tracking-wider text-on-primary-container sm:col-span-2 lg:col-span-1">Program Studi</li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-kreatif.html">Bisnis Kreatif</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="jurnal.html">Jurnal</a>
+              </li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-4 space-y-4">
+            <h2
+              class="font-label-lg text-label-lg font-bold text-on-primary uppercase tracking-wider"
+            >
+              Kontak Resmi
+            </h2>
+            <ul
+              class="space-y-2.5 font-body-sm text-body-sm text-surface-container-high"
+            >
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="mailto:politekniksby@gmail.com"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] shrink-0 text-on-primary-container"
+                    >mail</span
+                  ><span class="break-all">Email: politekniksby@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/628123259310"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hubungi WhatsApp Marketing 1 Politeknik Surabaya di +62 812-3253-9310"
+                >
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Marketing 1: +62 812-3253-9310</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/6281330350822"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hubungi WhatsApp Marketing 2 Politeknik Surabaya di +62 813-3035-0822"
+                >
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Marketing 2: +62 813-3035-0822</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-start gap-2 hover:text-on-primary transition-colors"
+                  href="https://wa.me/6285731112886"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Hubungi WhatsApp Akademik Politeknik Surabaya di +62 857-3111-2886"
+                >
+                  <svg class="whatsapp-icon w-[18px] h-[18px] shrink-0 text-on-primary-container" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="break-words"
+                    >WhatsApp Akademik: +62 857-3111-2886</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-space-md border-t border-surface-container-highest/20 flex flex-col md:flex-row items-center justify-between gap-space-sm text-center md:text-left font-caption text-caption text-surface-container-high"
+        >
+          <div>&copy; 2025 Politeknik Surabaya. Hak Cipta Dilindungi.</div>
+          <div>Politeknik Surabaya</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

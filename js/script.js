@@ -153,17 +153,55 @@ tailwind.config = {
       section: "sertifikasi",
       path: "sertifikasi",
     },
+    "info.html": { section: "info", path: "info" },
+    "berita-visitasi-asesor-ban-pt.html": {
+      section: "info",
+      path: "info",
+    },
+    "berita-validasi-bap-visitasi.html": {
+      section: "info",
+      path: "info",
+    },
+    "berita-kolaborasi-politeknik-nsc.html": {
+      section: "info",
+      path: "info",
+    },
+    "berita-staf-pengajar-s2-stts.html": {
+      section: "info",
+      path: "info",
+    },
+    "berita-optimalisasi-ruangan-kampus.html": {
+      section: "info",
+      path: "info",
+    },
+    "manajemen-informatika.html": {
+      section: "prodi",
+      path: "prodi-manajemen-informatika",
+    },
+    "teknik-komputer.html": {
+      section: "prodi",
+      path: "prodi-teknik-komputer",
+    },
+    "komputerisasi-akuntansi.html": {
+      section: "prodi",
+      path: "prodi-komputerisasi-akuntansi",
+    },
+    "bisnis-kreatif.html": {
+      section: "prodi",
+      path: "prodi-bisnis-kreatif",
+    },
+    "bisnis-jasa-makanan.html": {
+      section: "prodi",
+      path: "prodi-bisnis-jasa-makanan",
+    },
     "biaya-pendidikan.html": {
       section: "biaya-pendidikan",
       path: "biaya-pendidikan",
     },
-    "jurnal-mi.html": { section: "jurnal-mi", path: "jurnal-mi" },
-    "jurnal-tk.html": { section: "jurnal-tk", path: "jurnal-tk" },
-    "jurnal-ka.html": { section: "jurnal-ka", path: "jurnal-ka" },
-    "layanan-bebas-plagiasi.html": {
-      section: "plagiasi",
-      path: "plagiasi",
-    },
+    "jurnal.html": { section: "jurnal", path: "jurnal" },
+    "jurnal-ka.html": { section: "jurnal", path: "jurnal" },
+    "jurnal-mi.html": { section: "jurnal", path: "jurnal" },
+    "jurnal-tk.html": { section: "jurnal", path: "jurnal" },
     "pendaftaran.html": { section: "pendaftaran", path: "pendaftaran" },
   };
 
@@ -623,14 +661,22 @@ tailwind.config = {
   function initRegistrationForm() {
     var form = document.getElementById("registration-form");
     var phone = document.getElementById("applicant-phone");
+    var program = document.getElementById("applicant-program");
+    var whatsappLink = document.getElementById("registration-whatsapp");
     var submitButton = document.getElementById("registration-submit");
     var status = document.getElementById("registration-status");
     var successPanel = document.getElementById("registration-success");
     var successTitle = document.getElementById("registration-success-title");
     var configNotice = document.getElementById("registration-config-notice");
     var accessKeyConfig = document.querySelector('meta[name="web3forms-access-key"]');
-    if (!form || !phone || !submitButton || !status || !successPanel || !successTitle || !configNotice || !accessKeyConfig) return;
+    if (!form || !phone || !program || !whatsappLink || !submitButton || !status || !successPanel || !successTitle || !configNotice || !accessKeyConfig) return;
 
+    var ALLOWED_PROGRAMS = [
+      "Komputerisasi Akuntansi (D3)",
+      "Bisnis Kreatif (D4)",
+      "Bisnis Jasa Makanan (D4)"
+    ];
+    var WHATSAPP_ADMIN = "628123259310";
     var submitting = false;
     if (!accessKeyConfig.content.trim()) configNotice.classList.remove("hidden");
 
@@ -645,6 +691,39 @@ tailwind.config = {
       );
     }
 
+    function validateProgram() {
+      var value = program.value;
+      program.setCustomValidity(
+        value && ALLOWED_PROGRAMS.indexOf(value) === -1
+          ? "Silakan pilih program studi dari daftar yang tersedia."
+          : ""
+      );
+    }
+
+    function setWhatsAppLink(name, selectedProgram) {
+      var applicant = (name || "").trim() || "calon mahasiswa";
+      var studyProgram = (selectedProgram || "").trim();
+      var message = [
+        "Halo Admin Pendaftaran Politeknik Surabaya,",
+        "",
+        "Saya " +
+          applicant +
+          (studyProgram
+            ? " ingin melanjutkan pendaftaran program studi " + studyProgram + "."
+            : " ingin melanjutkan pendaftaran."),
+        "Saya akan mengirimkan formulir pendaftaran resmi yang sudah diisi beserta dokumen persyaratan berikut melalui WhatsApp ini:",
+        "1. Formulir pendaftaran resmi yang sudah diisi",
+        "2. Ijazah/SKL",
+        "3. Transkrip nilai",
+        "4. KTP",
+        "5. Kartu Keluarga (KK)",
+        "",
+        "Mohon informasi mengenai proses selanjutnya. Terima kasih."
+      ];
+      whatsappLink.href =
+        "https://wa.me/" + WHATSAPP_ADMIN + "?text=" + encodeURIComponent(message.join("\n"));
+    }
+
     function showStatus(message, isError) {
       status.textContent = message;
       status.classList.remove("hidden", "bg-red-50", "text-red-800", "bg-green-50", "text-green-800");
@@ -653,12 +732,14 @@ tailwind.config = {
 
     phone.addEventListener("input", validatePhone);
     phone.addEventListener("blur", validatePhone);
+    program.addEventListener("change", validateProgram);
 
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
       if (submitting) return;
 
       validatePhone();
+      validateProgram();
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
@@ -681,14 +762,16 @@ tailwind.config = {
       status.classList.add("hidden");
 
       var formData = new FormData(form);
+      var applicantName = String(formData.get("name") || "").trim();
+      var applicantProgram = String(formData.get("program_studi") || "").trim();
       var payload = {
         access_key: accessKey,
         subject: "Pendaftaran Mahasiswa Baru - Politeknik Surabaya",
         from_name: "Politeknik Surabaya",
-        name: formData.get("name"),
-        email: formData.get("email"),
-        phone: formData.get("phone"),
-        program_studi: formData.get("program_studi")
+        name: applicantName,
+        email: String(formData.get("email") || "").trim(),
+        phone: String(formData.get("phone") || "").trim(),
+        program_studi: applicantProgram
       };
 
       try {
@@ -727,6 +810,7 @@ tailwind.config = {
           );
         }
 
+        setWhatsAppLink(applicantName, applicantProgram);
         form.reset();
         form.classList.add("hidden");
         successPanel.classList.remove("hidden");

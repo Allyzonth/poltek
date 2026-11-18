@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html class="light" lang="id">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
-    <title>Bisnis Jasa Makanan â€” Politeknik Surabaya</title>
+    <title>Bisnis Jasa Makanan | Politeknik Surabaya</title>
     <meta name="description" content="Informasi Program Studi Bisnis Jasa Makanan Politeknik Surabaya." />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -70,45 +70,42 @@
           >
           <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="sertifikasi"
+            data-path="info"
             data-nav-link
-            href="sertifikasi-profesi.html"
-            >Sertifikasi</a
+            href="info.html"
+            >Info</a
           >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            href="biaya-pendidikan.html"
-            >Biaya Pendidikan</a
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
           >
-          <a
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-mi"
+            data-path="jurnal"
             data-nav-link
-            href="jurnal-mi.html"
-            >Jurnal MI</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-tk"
-            data-nav-link
-            href="jurnal-tk.html"
-            >Jurnal TK</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-ka"
-            data-nav-link
-            href="jurnal-ka.html"
-            >Jurnal KA</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="plagiasi"
-            data-nav-link
-            href="layanan-bebas-plagiasi.html"
-            >Plagiasi</a
+            href="jurnal.html"
+            >Jurnal</a
           >
         </nav>
         <div class="flex items-center gap-space-sm">
@@ -197,45 +194,38 @@
           >
           <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="sertifikasi-profesi.html"
-            data-path="sertifikasi"
+            href="info.html"
+            data-path="info"
             data-nav-link
-            >Sertifikasi</a
+            >Info</a
           >
-          <a
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="biaya-pendidikan.html"
-            data-path="biaya-pendidikan"
+            href="jurnal.html"
+            data-path="jurnal"
             data-nav-link
-            >Biaya Pendidikan</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-mi.html"
-            data-path="jurnal-mi"
-            data-nav-link
-            >Jurnal MI</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-tk.html"
-            data-path="jurnal-tk"
-            data-nav-link
-            >Jurnal TK</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-ka.html"
-            data-path="jurnal-ka"
-            data-nav-link
-            >Jurnal KA</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="layanan-bebas-plagiasi.html"
-            data-path="plagiasi"
-            data-nav-link
-            >Plagiasi</a
+            >Jurnal</a
           >
           <a
             class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary-hover"
@@ -254,9 +244,7 @@
           <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
             <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="program-studi.html">Program Studi</a></li>
-            <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a></li>
+            <li><span class="text-outline">Program Studi</span></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
             <li><span aria-current="page" class="text-primary font-semibold">Bisnis Jasa Makanan</span></li>
           </ol>
@@ -270,11 +258,11 @@
           <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low w-fit shadow-sm mb-6">
               <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
-              <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Program Studi</span>
+              <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Program Studi · D4</span>
+              <span class="status-badge">Dalam Pengembangan</span>
             </div>
             <h1 class="font-headline-xl-mobile lg:font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-primary font-bold tracking-tight">Bisnis Jasa Makanan</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Program studi yang berfokus pada bisnis jasa makanan dengan visi menghasilkan lulusan profesional di bidang bisnis jasa makanan.</p>
-            <div class="flex flex-wrap gap-2 mt-6"><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Bisnis Jasa Makanan</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Profesional</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Riset Terapan</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Kemitraan</span></div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Program Studi D4 Bisnis Jasa Makanan masih dalam tahap pengembangan. Informasi akademik akan dipublikasikan setelah memperoleh pengesahan resmi.</p>
           </div>
         </div>
       </section>
@@ -286,15 +274,13 @@
               <div class="max-w-3xl mb-10">
                 <div class="inline-flex items-center gap-2 mb-4">
                   <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
-                  <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Gambaran Umum</span>
+                  <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Status Akademik</span>
                 </div>
-                <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Mengenal Program Studi Bisnis Jasa Makanan</h2>
+                <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Informasi Akademik Program Studi</h2>
               </div>
-              <div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-              <p>Program Studi Bisnis Jasa Makanan berfokus pada penyelenggaraan pendidikan dan pembelajaran profesional di bidang bisnis jasa makanan yang berkualitas.</p>
-              <p>Program studi ini juga mengembangkan penelitian terapan, pengabdian kepada masyarakat, serta kerja sama dengan pemerintah, dunia usaha, dan industri di tingkat lokal, nasional, maupun internasional.</p>
+              <div role="note" class="rounded-2xl border border-surface-container bg-surface-container-low p-6 lg:p-8">
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed"><span class="font-bold text-primary">Informasi akademik belum disahkan.</span> Program Studi D4 Bisnis Jasa Makanan masih dalam tahap pengembangan. Gambaran umum, visi, misi, kompetensi, dan informasi akademik lainnya akan dipublikasikan setelah memperoleh pengesahan resmi.</p>
               </div>
-              <div class="flex flex-wrap gap-2 mt-6"><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Bisnis Jasa Makanan</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Profesional</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Riset Terapan</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Kemitraan</span></div>
             </div>
             <div class="lg:col-span-5 order-1 lg:order-2">
               <div class="relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container">
@@ -313,37 +299,11 @@
               <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Fokus Pembelajaran</span>
             </div>
             <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Kompetensi yang Dikembangkan</h2>
-            <p class="font-body-md text-body-md text-on-surface-variant">Kompetensi berikut dirangkum dari informasi program studi yang tersedia.</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
-              <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">restaurant</span>
-              </div>
-              
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Menghasilkan lulusan yang profesional dan berkualitas di bidang bisnis jasa makanan sehingga memiliki daya saing yang tinggi.</p>
-            </article>
-            <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
-              <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">science</span>
-              </div>
-              
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Menghasilkan lulusan yang mampu melakukan riset profesional di bidang bisnis jasa makanan sehingga bermanfaat bagi dunia usaha dan industri maupun masyarakat luas.</p>
-            </article>
-            <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
-              <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">volunteer_activism</span>
-              </div>
-              
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Menghasilkan lulusan yang mampu mengamalkan ilmunya melalui pengabdian kepada masyarakat dan layanan profesi dalam bidang bisnis jasa makanan.</p>
-            </article>
-            <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
-              <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">handshake</span>
-              </div>
-              
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Menghasilkan lulusan yang mampu berkontribusi kepada institusi dalam menjalin kerja sama dengan pemerintah maupun dunia usaha dan industri.</p>
-            </article>
+          <div class="max-w-3xl">
+            <div class="rounded-2xl bg-surface-container-lowest p-6 lg:p-8 shadow-sm border border-surface-container">
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Daftar kompetensi lulusan Program Studi D4 Bisnis Jasa Makanan belum disahkan. Informasi kompetensi akan dipublikasikan setelah memperoleh pengesahan resmi.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -358,37 +318,36 @@
             <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Visi dan Misi Bisnis Jasa Makanan</h2>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <div class="order-2 lg:order-1 lg:col-span-7 space-y-8">
+            <div class="order-2 lg:order-1 lg:col-span-7">
               <div class="rounded-2xl bg-surface-container-lowest p-8 lg:p-10 shadow-sm border border-surface-container">
-                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-4">Visi Program Studi Bisnis Jasa Makanan</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Menjadi program studi unggul dalam menghasilkan lulusan profesional di bidang bisnis jasa makanan.</p>
-              </div>
-              <div class="rounded-2xl bg-surface-container-low p-8 lg:p-10">
-                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-5">Misi Program Studi Bisnis Jasa Makanan</h3>
-                <ol class="space-y-4">
-              <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">1</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Menyelenggarakan pendidikan dan pembelajaran profesional di bidang bisnis jasa makanan yang berkualitas.</p>
-              </li>
-              <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">2</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Mengembangkan penelitian terapan di bidang bisnis jasa makanan yang berkualitas dan bermanfaat bagi masyarakat.</p>
-              </li>
-              <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">3</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Menyelenggarakan pengabdian kepada masyarakat dan layanan profesi dalam bidang bisnis jasa makanan.</p>
-              </li>
-              <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">4</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Meningkatkan kerja sama dan kemitraan dengan berbagai institusi baik dengan pemerintah maupun dunia usaha dan industri skala lokal, nasional, maupun internasional.</p>
-              </li>
-            </ol>
+                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-4">Informasi Visi dan Misi</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Visi dan misi Program Studi D4 Bisnis Jasa Makanan belum ditetapkan secara resmi. Informasi akan dipublikasikan setelah memperoleh pengesahan resmi.</p>
               </div>
             </div>
             <div class="order-1 lg:order-2 lg:col-span-5">
               <figure class="rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container shadow-sm">
                 <img src="assets/images/program-bisnis-jasa-makanan.svg" alt="Ilustrasi Program Studi Bisnis Jasa Makanan" width="800" height="450" loading="lazy" decoding="async" class="block w-full h-auto object-contain" />
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="biaya-pendidikan" class="py-14 lg:py-20 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="max-w-3xl mb-10">
+            <div class="inline-flex items-center gap-2 mb-4">
+              <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
+              <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Informasi Biaya</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Biaya Pendidikan</h2>
+          </div>
+          <div class="max-w-3xl">
+            <div class="rounded-2xl bg-surface-container-lowest p-6 lg:p-8 shadow-sm border border-surface-container flex items-start gap-4">
+              <div class="w-12 h-12 shrink-0 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">info</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Program Studi D4 Bisnis Jasa Makanan masih dalam tahap pengembangan. Informasi biaya pendidikan belum dapat ditetapkan dan akan diumumkan setelah memperoleh konfirmasi resmi dari pihak kampus.</p>
             </div>
           </div>
         </div>
@@ -401,13 +360,9 @@
             <div class="absolute -right-12 -top-12 w-72 h-72 rounded-full border-4 border-surface-variant/10 pointer-events-none"></div>
             <div class="relative z-10">
               <h2 class="font-headline-lg text-headline-lg text-on-primary font-bold mb-3">Tertarik dengan Program Studi Bisnis Jasa Makanan?</h2>
-              <p class="font-body-md text-body-md text-surface-container-high max-w-2xl mx-auto mb-8">Hubungi kanal resmi kampus atau akses informasi penerimaan mahasiswa baru Politeknik Surabaya.</p>
+              <p class="font-body-md text-body-md text-surface-container-high max-w-2xl mx-auto mb-8">Hubungi kanal resmi kampus untuk mendapatkan informasi lebih lanjut mengenai Program Studi Bisnis Jasa Makanan.</p>
               <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg px-7 py-3.5 rounded-xl font-bold shadow-lg transition-colors" href="pendaftaran.html">
-                  Informasi Pendaftaran
-                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">how_to_reg</span>
-                </a>
-                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-on-primary hover:text-on-primary-container font-label-lg text-label-lg px-7 py-3.5 rounded-xl border border-surface-container-highest/30 transition-colors" href="mailto:politekniksby@gmail.com">
+                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg px-7 py-3.5 rounded-xl font-bold shadow-lg transition-colors" href="mailto:politekniksby@gmail.com">
                   <span class="material-symbols-outlined text-[18px]" aria-hidden="true">mail</span>
                   Hubungi Kampus
                 </a>
@@ -497,19 +452,20 @@
                 <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
+                <a class="hover:text-on-primary transition-colors" href="info.html">Info</a>
+              </li>
+              <li class="pt-3 font-label-md text-label-md font-semibold uppercase tracking-wider text-on-primary-container sm:col-span-2 lg:col-span-1">Program Studi</li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-kreatif.html">Bisnis Kreatif</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="index.html#program-studi-pilihan">Program Studi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
-              </li>
-              <li>
-                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
+                <a class="hover:text-on-primary transition-colors" href="jurnal.html">Jurnal</a>
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>

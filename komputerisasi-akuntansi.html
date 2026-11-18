@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html class="light" lang="id">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
-    <title>Komputerisasi Akuntansi â€” Politeknik Surabaya</title>
+    <title>Komputerisasi Akuntansi | Politeknik Surabaya</title>
     <meta name="description" content="Informasi Program Studi Komputerisasi Akuntansi Diploma III Politeknik Surabaya." />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -70,45 +70,42 @@
           >
           <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="sertifikasi"
+            data-path="info"
             data-nav-link
-            href="sertifikasi-profesi.html"
-            >Sertifikasi</a
+            href="info.html"
+            >Info</a
           >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            href="biaya-pendidikan.html"
-            >Biaya Pendidikan</a
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
           >
-          <a
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-mi"
+            data-path="jurnal"
             data-nav-link
-            href="jurnal-mi.html"
-            >Jurnal MI</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-tk"
-            data-nav-link
-            href="jurnal-tk.html"
-            >Jurnal TK</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-ka"
-            data-nav-link
-            href="jurnal-ka.html"
-            >Jurnal KA</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="plagiasi"
-            data-nav-link
-            href="layanan-bebas-plagiasi.html"
-            >Plagiasi</a
+            href="jurnal.html"
+            >Jurnal</a
           >
         </nav>
         <div class="flex items-center gap-space-sm">
@@ -197,45 +194,38 @@
           >
           <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="sertifikasi-profesi.html"
-            data-path="sertifikasi"
+            href="info.html"
+            data-path="info"
             data-nav-link
-            >Sertifikasi</a
+            >Info</a
           >
-          <a
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="biaya-pendidikan.html"
-            data-path="biaya-pendidikan"
+            href="jurnal.html"
+            data-path="jurnal"
             data-nav-link
-            >Biaya Pendidikan</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-mi.html"
-            data-path="jurnal-mi"
-            data-nav-link
-            >Jurnal MI</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-tk.html"
-            data-path="jurnal-tk"
-            data-nav-link
-            >Jurnal TK</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-ka.html"
-            data-path="jurnal-ka"
-            data-nav-link
-            >Jurnal KA</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="layanan-bebas-plagiasi.html"
-            data-path="plagiasi"
-            data-nav-link
-            >Plagiasi</a
+            >Jurnal</a
           >
           <a
             class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary-hover"
@@ -254,9 +244,7 @@
           <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
             <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="program-studi.html">Program Studi</a></li>
-            <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a></li>
+            <li><span class="text-outline">Program Studi</span></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
             <li><span aria-current="page" class="text-primary font-semibold">Komputerisasi Akuntansi</span></li>
           </ol>
@@ -270,7 +258,7 @@
           <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low w-fit shadow-sm mb-6">
               <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
-              <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Program Studi Â· Diploma III</span>
+              <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Program Studi · Diploma III</span>
             </div>
             <h1 class="font-headline-xl-mobile lg:font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-primary font-bold tracking-tight">Komputerisasi Akuntansi</h1>
             <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Padukan prinsip akuntansi komprehensif dengan sistem informasi keuangan digital, perpajakan terotomasi, audit teknologi informasi, dan analisis finansial korporat.</p>
@@ -291,10 +279,8 @@
                 <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Mengenal Program Studi Komputerisasi Akuntansi</h2>
               </div>
               <div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-              <p>Padukan prinsip akuntansi komprehensif dengan sistem informasi keuangan digital, perpajakan terotomasi, audit teknologi informasi, dan analisis finansial korporat.</p>
-              <p>Program Studi Komputerisasi Akuntansi merupakan salah satu dari tiga program studi Diploma III yang diselenggarakan Politeknik Surabaya.</p>
+                <p>Program Studi Komputerisasi Akuntansi merupakan program studi Diploma III di Politeknik Surabaya.</p>
               </div>
-              <div class="flex flex-wrap gap-2 mt-6"><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Sistem Akuntansi</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Financial Tech</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Database Keuangan</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Audit TI</span></div>
             </div>
             <div class="lg:col-span-5 order-1 lg:order-2">
               <div class="relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container">
@@ -313,7 +299,6 @@
               <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Fokus Pembelajaran</span>
             </div>
             <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Kompetensi yang Dikembangkan</h2>
-            <p class="font-body-md text-body-md text-on-surface-variant">Kompetensi berikut dirangkum dari informasi program studi yang tersedia.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
@@ -344,6 +329,61 @@
               <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Audit Teknologi Informasi</h3>
               <p class="font-body-sm text-body-sm text-on-surface-variant">Pemeriksaan dan pengendalian sistem informasi.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sertifikasi" class="py-14 lg:py-20 bg-surface-container-low">
+        <div class="max-w-6xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="max-w-3xl mb-8">
+            <div class="inline-flex items-center gap-2 mb-4">
+              <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
+              <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Daftar Sertifikasi</span>
+            </div>
+            <h2 id="sertifikasi-heading" class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Sertifikasi Kompetensi</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Informasi sertifikasi kompetensi yang berkaitan dengan Program Studi D3 Komputerisasi Akuntansi.</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-3">Klik item sertifikasi untuk melihat dokumen sertifikat.</p>
+          </div>
+
+          <div class="cert-accordion border border-surface-container rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm transition-shadow hover:shadow-md" data-cert-accordion>
+            <button type="button" id="cert-trigger-1" class="cert-trigger w-full flex items-center gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left transition-colors hover:bg-surface-container-low focus-visible:bg-surface-container-low" aria-expanded="false" aria-controls="cert-panel-1">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <path d="M14 2v6h6" />
+                  <circle cx="12" cy="15" r="2.5" />
+                  <path d="M10.5 17.5 9 21l3-1 3 1-1.5-3.5" />
+                </svg>
+              </span>
+              <span class="flex-1 font-label-lg text-label-lg font-bold text-primary">Sertifikasi Komputerisasi Akuntansi</span>
+              <span class="cert-arrow material-symbols-outlined text-primary transition-transform duration-300" aria-hidden="true">expand_more</span>
+            </button>
+
+            <div id="cert-panel-1" class="cert-panel overflow-hidden transition-[max-height] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" aria-hidden="true">
+              <div class="border-t border-surface-container px-5 pb-6 pt-5 sm:px-6">
+                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-6 uppercase tracking-wide">SERTIFIKASI KOMPUTERISASI AKUNTANSI</h3>
+                <div class="cert-gallery grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6">
+                  <figure class="cert-gallery-card m-0">
+                    <button type="button" class="cert-gallery-button transition-opacity hover:opacity-90 focus-visible:opacity-90" data-lightbox-src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-1.jpg" data-lightbox-alt="Dokumen sertifikasi komputerisasi akuntansi 1">
+                      <img src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-1.jpg" alt="Dokumen sertifikasi komputerisasi akuntansi 1" width="1448" height="2048" loading="lazy" />
+                    </button>
+                    <figcaption class="px-4 py-3 font-label-md text-label-md font-semibold text-primary">Dokumen 1</figcaption>
+                  </figure>
+                  <figure class="cert-gallery-card m-0">
+                    <button type="button" class="cert-gallery-button transition-opacity hover:opacity-90 focus-visible:opacity-90" data-lightbox-src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-2.jpg" data-lightbox-alt="Dokumen sertifikasi komputerisasi akuntansi 2">
+                      <img src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-2.jpg" alt="Dokumen sertifikasi komputerisasi akuntansi 2" width="1448" height="2048" loading="lazy" />
+                    </button>
+                    <figcaption class="px-4 py-3 font-label-md text-label-md font-semibold text-primary">Dokumen 2</figcaption>
+                  </figure>
+                  <figure class="cert-gallery-card m-0">
+                    <button type="button" class="cert-gallery-button transition-opacity hover:opacity-90 focus-visible:opacity-90" data-lightbox-src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-3.jpg" data-lightbox-alt="Dokumen sertifikasi komputerisasi akuntansi 3">
+                      <img src="assets/images/sertifikasi/sertifikasi-komputerisasi-akuntansi-3.jpg" alt="Dokumen sertifikasi komputerisasi akuntansi 3" width="2048" height="1448" loading="lazy" />
+                    </button>
+                    <figcaption class="px-4 py-3 font-label-md text-label-md font-semibold text-primary">Dokumen 3</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -393,6 +433,26 @@
               <figure class="rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container shadow-sm">
                 <img src="assets/images/visi-misi-komputerisasi-akuntansi.jpg" alt="Banner Visi dan Misi Program Studi Komputerisasi Akuntansi" width="827" height="1169" loading="lazy" decoding="async" class="block w-full h-auto object-contain" />
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="biaya-pendidikan" class="py-14 lg:py-20 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div class="max-w-3xl mb-10">
+            <div class="inline-flex items-center gap-2 mb-4">
+              <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
+              <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Informasi Biaya</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Biaya Pendidikan</h2>
+          </div>
+          <div class="max-w-3xl">
+            <div class="rounded-2xl bg-surface-container-lowest p-6 lg:p-8 shadow-sm border border-surface-container flex items-start gap-4">
+              <div class="w-12 h-12 shrink-0 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">info</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Informasi rincian biaya pendidikan Program Studi D3 Komputerisasi Akuntansi sedang menunggu konfirmasi resmi dari pihak kampus. Informasi biaya akan diperbarui setelah data resmi tersedia.</p>
             </div>
           </div>
         </div>
@@ -501,19 +561,20 @@
                 <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
+                <a class="hover:text-on-primary transition-colors" href="info.html">Info</a>
+              </li>
+              <li class="pt-3 font-label-md text-label-md font-semibold uppercase tracking-wider text-on-primary-container sm:col-span-2 lg:col-span-1">Program Studi</li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-kreatif.html">Bisnis Kreatif</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="index.html#program-studi-pilihan">Program Studi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
-              </li>
-              <li>
-                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
+                <a class="hover:text-on-primary transition-colors" href="jurnal.html">Jurnal</a>
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>
@@ -587,5 +648,23 @@
         </div>
       </div>
     </footer>
+    <div
+      id="cert-lightbox"
+      class="hidden fixed inset-0 z-[100] items-center justify-center bg-slate-950/90 p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Pratinjau dokumen sertifikat"
+      aria-hidden="true"
+    >
+      <button
+        id="cert-lightbox-close"
+        class="absolute right-4 top-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-primary shadow-lg transition-colors hover:bg-slate-100 focus-visible:outline-white sm:right-6 sm:top-6"
+        type="button"
+        aria-label="Tutup pratinjau dokumen"
+      >
+        <span class="material-symbols-outlined text-[28px]" aria-hidden="true">close</span>
+      </button>
+      <img id="cert-lightbox-img" class="cert-lightbox-image rounded-sm shadow-2xl" alt="" />
+    </div>
   </body>
 </html>

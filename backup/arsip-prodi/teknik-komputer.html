@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
-    <title>Manajemen Informatika â€” Politeknik Surabaya</title>
-    <meta name="description" content="Informasi Program Studi Manajemen Informatika Diploma III Politeknik Surabaya." />
+    <title>Teknik Komputer (D3) â€” Politeknik Surabaya</title>
+    <meta
+      name="description"
+      content="Informasi Program Studi Teknik Komputer Diploma III Politeknik Surabaya."
+    />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -75,13 +78,31 @@
             href="sertifikasi-profesi.html"
             >Sertifikasi</a
           >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            href="biaya-pendidikan.html"
-            >Biaya Pendidikan</a
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
           >
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
           <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
             data-path="jurnal-mi"
@@ -202,13 +223,27 @@
             data-nav-link
             >Sertifikasi</a
           >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="biaya-pendidikan.html"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            >Biaya Pendidikan</a
-          >
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
           <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
             href="jurnal-mi.html"
@@ -254,11 +289,11 @@
           <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
             <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="program-studi.html">Program Studi</a></li>
+            <li><span class="text-outline">Program Studi</span></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><a class="hover:text-primary transition-colors" href="manajemen-informatika.html">Manajemen Informatika</a></li>
+            <li><a class="hover:text-primary transition-colors" href="teknik-komputer.html">Teknik Komputer</a></li>
             <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-            <li><span aria-current="page" class="text-primary font-semibold">Manajemen Informatika</span></li>
+            <li><span aria-current="page" class="text-primary font-semibold">Teknik Komputer</span></li>
           </ol>
         </nav>
       </div>
@@ -272,9 +307,9 @@
               <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
               <span class="font-label-md text-label-md font-bold tracking-wider text-primary uppercase">Program Studi Â· Diploma III</span>
             </div>
-            <h1 class="font-headline-xl-mobile lg:font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-primary font-bold tracking-tight">Manajemen Informatika</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Kembangkan kemampuan rekayasa pemrograman, analisis dan perancangan sistem informasi, tata kelola basis data enterprise, dan arsitektur aplikasi berbasis cloud.</p>
-            <div class="flex flex-wrap gap-2 mt-6"><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Pemrograman Web</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Basis Data</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Sistem Informasi</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Software Eng.</span></div>
+            <h1 class="font-headline-xl-mobile lg:font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-primary font-bold tracking-tight">Teknik Komputer</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Pelajari arsitektur jaringan komputer, rekayasa perangkat keras, mikrokontroler, sistem kontrol otomatis, dan implementasi teknologi robotik industri.</p>
+            <div class="flex flex-wrap gap-2 mt-6"><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Jaringan Komputer</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Perangkat Keras</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Sistem Kontrol</span><span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">IoT &amp; Sensor</span></div>
           </div>
         </div>
       </section>
@@ -288,17 +323,17 @@
                   <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
                   <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Gambaran Umum</span>
                 </div>
-                <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Mengenal Program Studi Manajemen Informatika</h2>
+                <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Mengenal Program Studi Teknik Komputer</h2>
               </div>
               <div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-              <p>Kembangkan kemampuan rekayasa pemrograman, analisis dan perancangan sistem informasi, tata kelola basis data enterprise, dan arsitektur aplikasi berbasis cloud.</p>
-              <p>Program Studi Manajemen Informatika merupakan salah satu dari tiga program studi Diploma III yang diselenggarakan Politeknik Surabaya.</p>
+              <p>Program Studi Teknik Komputer membekali mahasiswa dengan kompetensi di bidang arsitektur jaringan komputer, rekayasa perangkat keras, mikrokontroler, sistem kontrol otomatis, serta implementasi teknologi robotik industri.</p>
+              <p>Pembelajaran diarahkan pada praktik laboratorium dan pemecahan masalah teknis agar lulusan siap menghadapi kebutuhan dunia kerja di bidang teknologi.</p>
               </div>
-              <div class="flex flex-wrap gap-2 mt-6"><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Pemrograman Web</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Basis Data</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Sistem Informasi</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Software Eng.</span></div>
+              <div class="flex flex-wrap gap-2 mt-6"><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Jaringan Komputer</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Perangkat Keras</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">Sistem Kontrol</span><span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold">IoT &amp; Sensor</span></div>
             </div>
             <div class="lg:col-span-5 order-1 lg:order-2">
               <div class="relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container">
-                <img class="w-full h-full object-cover" alt="Suasana pembelajaran vokasi di Politeknik Surabaya" src="assets/images/pendidikan-vokasi.jpg" loading="lazy" decoding="async" />
+                <img class="w-full h-full object-cover" alt="Laboratorium komputasi Politeknik Surabaya" src="assets/images/laboratorium-komputasi.jpg" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
@@ -318,31 +353,31 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
               <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">code</span>
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">lan</span>
               </div>
-              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Pemrograman Web</h3>
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Pengembangan antarmuka dan aplikasi berbasis web.</p>
+              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Jaringan Komputer</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Arsitektur dan implementasi jaringan komputer.</p>
             </article>
             <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
               <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">database</span>
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">memory</span>
               </div>
-              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Basis Data</h3>
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Perancangan dan pengelolaan basis data.</p>
+              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Perangkat Keras</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Rekayasa perangkat keras dan mikrokontroler.</p>
             </article>
             <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
               <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">account_tree</span>
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">settings_input_component</span>
               </div>
-              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Sistem Informasi</h3>
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Analisis dan perancangan sistem informasi.</p>
+              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Sistem Kontrol</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Sistem kontrol otomatis dan penerapannya.</p>
             </article>
             <article class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
               <div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">developer_mode</span>
+                <span class="material-symbols-outlined text-[24px]" aria-hidden="true">sensors</span>
               </div>
-              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">Software Engineering</h3>
-              <p class="font-body-sm text-body-sm text-on-surface-variant">Praktik rekayasa perangkat lunak.</p>
+              <h3 class="font-label-lg text-label-lg text-primary font-bold mb-2">IoT &amp; Sensor</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Implementasi teknologi sensor dan robotik industri.</p>
             </article>
           </div>
         </div>
@@ -355,24 +390,24 @@
               <span class="w-2.5 h-1 bg-tertiary rounded-full"></span>
               <span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-primary">Visi dan Misi</span>
             </div>
-            <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Visi dan Misi Manajemen Informatika</h2>
+            <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-3">Visi dan Misi Teknik Komputer</h2>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <div class="order-2 lg:order-1 lg:col-span-7 space-y-8">
               <div class="rounded-2xl bg-surface-container-lowest p-8 lg:p-10 shadow-sm border border-surface-container">
-                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-4">Visi Program Studi Manajemen Informatika</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Terwujudnya Program studi Manajemen Informatika berdaya saing dalam menghasilkan lulusan dengan kompetensi yang dimiliki dalam bidang teknik pemograman komputer dan Decision Support System dalam menghadapi persaingan bebas.</p>
+                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-4">Visi Program Studi Teknik Komputer</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Menjadikan program studi Teknik Komputer berdaya saing dalam menghasilkan lulusan dengan kompetensi yang dimiliki dalam bidang jaringan , kontrol dan sistem robotik dalam menghadapi persaingan bebas.</p>
               </div>
               <div class="rounded-2xl bg-surface-container-low p-8 lg:p-10">
-                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-5">Misi Program Studi Manajemen Informatika</h3>
+                <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-5">Misi Program Studi Teknik Komputer</h3>
                 <ol class="space-y-4">
               <li class="flex items-start gap-4">
                 <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">1</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Mewujudkan program studi Manajemen Informatika berbasis pemrograman komputer.</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Mewujudkan program studi Teknik Komputer yang mampu menghasilkan hardware dan software yang berguna dalam perkembangan teknologi komputer.</p>
               </li>
               <li class="flex items-start gap-4">
                 <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">2</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Menyelenggarakan Manajemen Informatika untuk menghasilkan lulusan dalam bidang sistem informasi perusahaan / instansi.</p>
+                <p class="font-body-md text-body-md text-on-surface-variant">Menyelenggarakan Teknik Komputer untuk menghasilkan lulusan dalam bidang jaringan dan kontrol.</p>
               </li>
               <li class="flex items-start gap-4">
                 <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">3</span>
@@ -380,22 +415,18 @@
               </li>
               <li class="flex items-start gap-4">
                 <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">4</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Mengembangkan penelitian di bidang Manajemen Informatika yang bersifat terapan pada Industri Manufaktur dan Jasa.</p>
-              </li>
-              <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">5</span>
                 <p class="font-body-md text-body-md text-on-surface-variant">Mampu mengembangkan kompetensinya secara mandiri dan membuka lapangan kerja baru.</p>
               </li>
               <li class="flex items-start gap-4">
-                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">6</span>
-                <p class="font-body-md text-body-md text-on-surface-variant">Menguasai perangkat lunak komputer dalam bidang sistem informasi dan membangun jaringan komputer lokal maupun global.</p>
+                <span class="inline-flex items-center justify-center w-8 h-8 shrink-0 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">5</span>
+                <p class="font-body-md text-body-md text-on-surface-variant">Menguasai perangkat keras dan perangkat lunak komputer dalam bidang kontrol dan membangun jaringan komputer lokal maupun global.</p>
               </li>
             </ol>
               </div>
             </div>
             <div class="order-1 lg:order-2 lg:col-span-5">
               <figure class="rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container shadow-sm">
-                <img src="assets/images/visi-misi-manajemen-informatika.jpg" alt="Banner Visi dan Misi Program Studi Manajemen Informatika" width="827" height="1169" loading="lazy" decoding="async" class="block w-full h-auto object-contain" />
+                <img src="assets/images/visi-misi-teknik-komputer.jpg" alt="Banner Visi dan Misi Program Studi Teknik Komputer" width="827" height="1169" loading="lazy" decoding="async" class="block w-full h-auto object-contain" />
               </figure>
             </div>
           </div>
@@ -408,7 +439,7 @@
             <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full border-8 border-surface-variant/10 pointer-events-none"></div>
             <div class="absolute -right-12 -top-12 w-72 h-72 rounded-full border-4 border-surface-variant/10 pointer-events-none"></div>
             <div class="relative z-10">
-              <h2 class="font-headline-lg text-headline-lg text-on-primary font-bold mb-3">Tertarik dengan Program Studi Manajemen Informatika?</h2>
+              <h2 class="font-headline-lg text-headline-lg text-on-primary font-bold mb-3">Tertarik dengan Program Studi Teknik Komputer?</h2>
               <p class="font-body-md text-body-md text-surface-container-high max-w-2xl mx-auto mb-8">Hubungi kanal resmi kampus atau akses informasi penerimaan mahasiswa baru Politeknik Surabaya.</p>
               <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg px-7 py-3.5 rounded-xl font-bold shadow-lg transition-colors" href="pendaftaran.html">
@@ -505,9 +536,6 @@
                 <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
-              </li>
-              <li>
                 <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
               </li>
               <li>
@@ -515,9 +543,6 @@
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
-              </li>
-              <li>
-                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html class="light" lang="id">
   <head>
@@ -69,45 +69,42 @@
           >
           <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="sertifikasi"
+            data-path="info"
             data-nav-link
-            href="sertifikasi-profesi.html"
-            >Sertifikasi</a
+            href="info.html"
+            >Info</a
           >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            href="biaya-pendidikan.html"
-            >Biaya Pendidikan</a
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
           >
-          <a
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-mi"
+            data-path="jurnal"
             data-nav-link
-            href="jurnal-mi.html"
-            >Jurnal MI</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-tk"
-            data-nav-link
-            href="jurnal-tk.html"
-            >Jurnal TK</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-ka"
-            data-nav-link
-            href="jurnal-ka.html"
-            >Jurnal KA</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="plagiasi"
-            data-nav-link
-            href="layanan-bebas-plagiasi.html"
-            >Plagiasi</a
+            href="jurnal.html"
+            >Jurnal</a
           >
         </nav>
         <div class="flex items-center gap-space-sm">
@@ -196,45 +193,38 @@
           >
           <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="sertifikasi-profesi.html"
-            data-path="sertifikasi"
+            href="info.html"
+            data-path="info"
             data-nav-link
-            >Sertifikasi</a
+            >Info</a
           >
-          <a
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="biaya-pendidikan.html"
-            data-path="biaya-pendidikan"
+            href="jurnal.html"
+            data-path="jurnal"
             data-nav-link
-            >Biaya Pendidikan</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-mi.html"
-            data-path="jurnal-mi"
-            data-nav-link
-            >Jurnal MI</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-tk.html"
-            data-path="jurnal-tk"
-            data-nav-link
-            >Jurnal TK</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-ka.html"
-            data-path="jurnal-ka"
-            data-nav-link
-            >Jurnal KA</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="layanan-bebas-plagiasi.html"
-            data-path="plagiasi"
-            data-nav-link
-            >Plagiasi</a
+            >Jurnal</a
           >
           <a
             class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary-hover"
@@ -360,7 +350,7 @@
                     <img
                       class="w-full h-full object-cover"
                       data-alt="A modern, high-tech computer laboratory at Politeknik Surabaya with diverse Indonesian engineering students in navy blue campus blazers collaborating on coding and robotics workstations with dual monitors under bright daylight"
-                      src="assets/images/laboratorium-komputasi.jpg"
+                      src="assets/images/Foto_1.webp"
                     />
                     <!-- Ambient floating status badge -->
                     <div
@@ -377,12 +367,12 @@
                         <div
                           class="font-label-md text-label-md font-bold text-primary"
                         >
-                          Laboratorium Komputasi Terpadu
+                          Program Pastry Super Food With Moringa
                         </div>
                         <div
                           class="font-caption text-caption text-on-surface-variant"
                         >
-                          Pusat Praktek &amp; Riset Terapan
+                          By Chef Daniel
                         </div>
                       </div>
                     </div>
@@ -479,7 +469,7 @@
                   <img
                     class="w-full h-full object-cover"
                     data-alt="An Indonesian female polytechnic educator and instructor guiding a student on an advanced network switch and electronic motherboard setup in a bright contemporary lecture room"
-                    src="assets/images/pendidikan-vokasi.jpg"
+                    src="assets/images/Foto_3.webp"
                   />
                 </div>
                 <!-- Red accent block highlighting identity -->
@@ -594,165 +584,11 @@
                   karir masa depanmu di berbagai bidang industri.
                 </p>
               </div>
-              <a
-                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-lg text-label-lg font-semibold hover:bg-surface-variant transition-colors shadow-sm self-start md:self-auto"
-                data-path="biaya-pendidikan"
-                href="biaya-pendidikan.html"
-              >
-                <span class="material-symbols-outlined text-[18px]"
-                  >payments</span
-                >
-                Lihat Rincian Biaya
-              </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8">
-              <!-- Program 1: Teknik Komputer -->
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+              <!-- Program 1: Komputerisasi Akuntansi -->
               <div
-                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-2"
-              >
-                <div>
-                  <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
-                    <img
-                      alt="Ilustrasi Program Studi Teknik Komputer"
-                      class="aspect-[16/9] w-full object-cover"
-                      src="assets/images/program-teknik-komputer.svg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between mb-5">
-                    <div
-                      class="w-12 h-12 rounded-2xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors"
-                    >
-                      <span class="material-symbols-outlined text-[26px]"
-                        >router</span
-                      >
-                    </div>
-                    <span
-                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider"
-                    >
-                      Diploma III (D3)
-                    </span>
-                  </div>
-                  <h3
-                    class="font-headline-md text-headline-md text-primary font-bold mb-2.5"
-                  >
-                    Teknik Komputer
-                  </h3>
-                  <p
-                    class="font-body-md text-body-md text-on-surface-variant mb-6"
-                  >
-                    Pelajari arsitektur jaringan komputer, rekayasa perangkat
-                    keras, mikrokontroler, sistem kontrol otomatis, dan
-                    implementasi teknologi robotik industri.
-                  </p>
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Jaringan Komputer</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Perangkat Keras</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Sistem Kontrol</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >IoT &amp; Sensor</span
-                    >
-                  </div>
-                </div>
-                <div class="pt-2 mt-auto">
-                  <a
-                    class="inline-flex items-center font-label-lg text-label-lg font-bold text-primary group-hover:text-primary gap-2 transition-colors"
-                    href="teknik-komputer.html"
-                  >
-                    <span>Pelajari Lebih Lanjut</span>
-                    <span
-                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Program 2: Manajemen Informatika -->
-              <div
-                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-2"
-              >
-                <div>
-                  <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
-                    <img
-                      alt="Ilustrasi Program Studi Manajemen Informatika"
-                      class="aspect-[16/9] w-full object-cover"
-                      src="assets/images/program-manajemen-informatika.svg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between mb-5">
-                    <div
-                      class="w-12 h-12 rounded-2xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors"
-                    >
-                      <span class="material-symbols-outlined text-[26px]"
-                        >code_blocks</span
-                      >
-                    </div>
-                    <span
-                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider"
-                    >
-                      Diploma III (D3)
-                    </span>
-                  </div>
-                  <h3
-                    class="font-headline-md text-headline-md text-primary font-bold mb-2.5"
-                  >
-                    Manajemen Informatika
-                  </h3>
-                  <p
-                    class="font-body-md text-body-md text-on-surface-variant mb-6"
-                  >
-                    Kembangkan kemampuan rekayasa pemrograman, analisis dan
-                    perancangan sistem informasi, tata kelola basis data
-                    enterprise, dan arsitektur aplikasi berbasis cloud.
-                  </p>
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Pemrograman Web</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Basis Data</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Sistem Informasi</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Software Eng.</span
-                    >
-                  </div>
-                </div>
-                <div class="pt-2 mt-auto">
-                  <a
-                    class="inline-flex items-center font-label-lg text-label-lg font-bold text-primary group-hover:text-primary gap-2 transition-colors"
-                    href="manajemen-informatika.html"
-                  >
-                    <span>Pelajari Lebih Lanjut</span>
-                    <span
-                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Program 3: Komputerisasi Akuntansi -->
-              <div
-                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-2"
+                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
@@ -822,76 +658,9 @@
                   </a>
                 </div>
               </div>
-              <!-- Program 4: Bisnis Jasa Makanan -->
+              <!-- Program 2: Bisnis Kreatif -->
               <div
-                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-2 lg:col-start-2"
-              >
-                <div>
-                  <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
-                    <img
-                      alt="Ilustrasi Program Studi Bisnis Jasa Makanan"
-                      class="aspect-[16/9] w-full object-cover"
-                      src="assets/images/program-bisnis-jasa-makanan.svg"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div class="flex items-center justify-between mb-5">
-                    <div
-                      class="w-12 h-12 rounded-2xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors"
-                    >
-                      <span class="material-symbols-outlined text-[26px]"
-                        >restaurant</span
-                      >
-                    </div>
-                    <span
-                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider"
-                    >
-                      Program Studi
-                    </span>
-                  </div>
-                  <h3
-                    class="font-headline-md text-headline-md text-primary font-bold mb-2.5"
-                  >
-                    Bisnis Jasa Makanan
-                  </h3>
-                  <p
-                    class="font-body-md text-body-md text-on-surface-variant mb-6"
-                  >
-                    Program studi unggul dalam menghasilkan lulusan profesional
-                    di bidang bisnis jasa makanan.
-                  </p>
-                  <div class="flex flex-wrap gap-2 mb-6">
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Bisnis Jasa Makanan</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Profesional</span
-                    >
-                    <span
-                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
-                      >Riset Terapan</span
-                    >
-                  </div>
-                </div>
-                <div class="pt-2 mt-auto">
-                  <a
-                    class="inline-flex items-center font-label-lg text-label-lg font-bold text-primary group-hover:text-primary gap-2 transition-colors"
-                    href="bisnis-jasa-makanan.html"
-                  >
-                    <span>Pelajari Lebih Lanjut</span>
-                    <span
-                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </a>
-                </div>
-              </div>
-              <!-- Program 5: Bisnis Kreatif -->
-              <div
-                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 md:col-start-2 lg:col-span-2 lg:col-start-4"
+                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
@@ -914,7 +683,7 @@
                     <span
                       class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider"
                     >
-                      Program Studi
+                      Diploma Empat (D4)
                     </span>
                   </div>
                   <h3
@@ -948,180 +717,74 @@
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION 5: NEWS AND CAMPUS INFORMATION -->
-        <section class="py-20 lg:py-28 bg-surface">
-          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
-            <div
-              class="flex flex-col sm:flex-row sm:items-center justify-between mb-12 gap-4"
-            >
-              <div>
-                <span
-                  class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold block mb-1"
-                >
-                  CERITA &amp; INFORMASI
-                </span>
-                <h2
-                  class="font-headline-xl text-headline-xl text-primary font-bold"
-                >
-                  Kabar dari Kampus
-                </h2>
-              </div>
-              <a
-                class="inline-flex items-center gap-2 font-label-lg text-label-lg font-bold text-primary hover:text-primary transition-colors"
-                href="berita.html">
-                <span>Lihat Semua Berita</span>
-                <span class="material-symbols-outlined text-[18px]"
-                  >arrow_forward</span
-                >
-              </a>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-              <!-- Main News Column (8 cols) -->
-              <div class="lg:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Featured Story (Full Width inside left block) -->
-                <article
-                  class="md:col-span-2 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow"
-                >
-                  <div class="md:w-5/12 relative aspect-[16/10] md:aspect-auto">
+              <!-- Program 3: Bisnis Jasa Makanan -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group md:col-span-2 md:mx-auto md:max-w-md lg:col-span-1 lg:mx-0 lg:max-w-none"
+              >
+                <div>
+                  <div class="mb-5 overflow-hidden rounded-xl bg-surface-container">
                     <img
-                      class="w-full h-full object-cover"
-                      alt="Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya"
-                      src="assets/images/berita-visitasi-utama.jpg"
+                      alt="Ilustrasi Program Studi Bisnis Jasa Makanan"
+                      class="aspect-[16/9] w-full object-cover"
+                      src="assets/images/program-bisnis-jasa-makanan.svg"
+                      loading="lazy"
+                      decoding="async"
                     />
-                    <span
-                      class="absolute top-4 left-4 bg-primary text-on-primary text-caption font-bold px-3 py-1 rounded-full"
+                  </div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-2xl bg-surface-container text-primary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors"
                     >
-                      Kegiatan Kampus
+                      <span class="material-symbols-outlined text-[26px]"
+                        >restaurant</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold uppercase tracking-wider"
+                    >
+                      Diploma Empat (D4)
                     </span>
                   </div>
-                  <div
-                    class="p-6 md:p-8 md:w-7/12 flex flex-col justify-between"
+                  <h3
+                    class="font-headline-md text-headline-md text-primary font-bold mb-2.5"
                   >
-                    <div>
-                      <span
-                        class="font-caption text-caption text-outline mb-2 block"
-                        >Arsip Berita 2017</span
-                      >
-                      <h3
-                        class="font-headline-md text-headline-md font-bold text-primary mb-3 group-hover:text-primary transition-colors"
-                      >
-                        Kegiatan Visitasi Tim Asesor BAN-PT di Kampus Politeknik
-                        Surabaya
-                      </h3>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-4"
-                      >
-                        Politeknik Surabaya menyambut visitasi
-                        asesor BAN-PT Prof Dr Mahfud Solihin dari UGM Jogjakarta
-                        dan Ir Suharyadi Pancono MT dari Politeknik Manufaktur
-                        Bandung pada Kamis (07/09/2017).
-                      </p>
-                    </div>
-                    <a
-                      class="font-label-lg text-label-lg font-semibold text-primary inline-flex items-center gap-1"
-                      href="berita-visitasi-asesor-ban-pt.html">
-                      Baca Selengkapnya
-                      <span class="material-symbols-outlined text-[16px]"
-                        >chevron_right</span
-                      >
-                    </a>
+                    Bisnis Jasa Makanan
+                  </h3>
+                  <div class="mb-3">
+                    <span class="status-badge">Dalam Pengembangan</span>
                   </div>
-                </article>
-                <!-- Article 2 -->
-                <article
-                  class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
-                >
-                  <div class="relative aspect-[16/10]">
-                    <img
-                      class="w-full h-full object-cover"
-                      alt="Dari Visitasi Tim Asesor BAN-PT di Kampus Politeknik Surabaya"
-                      src="assets/images/berita-validasi-utama.jpg"
-                    />
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-6"
+                  >
+                    Program studi yang berfokus pada bidang bisnis jasa makanan dan saat ini masih dalam tahap pengembangan.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-6">
                     <span
-                      class="absolute top-3 left-3 bg-secondary-container text-on-secondary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
+                      >Bisnis Jasa Makanan</span
                     >
-                      Akreditasi
-                    </span>
-                  </div>
-                  <div class="p-6 flex flex-col justify-between flex-1">
-                    <div>
-                      <span
-                        class="font-caption text-caption text-outline mb-1 block"
-                        >Arsip Berita 2017</span
-                      >
-                      <h4
-                        class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
-                      >
-                        Dari Visitasi Tim Asesor BAN-PT di Kampus Politeknik
-                        Surabaya
-                      </h4>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
-                      >
-                        Berkas Laporan Berita Acara Pemeriksaan (BAP) hasil
-                        visitasi tim asesor BAN-PT akan divalidasi lebih lanjut
-                        di Kantor BAN-PT Jakarta sebelum diplenokan.
-                      </p>
-                    </div>
-                    <a
-                      class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto"
-                      href="berita-validasi-bap-visitasi.html">
-                      Baca Selengkapnya
-                      <span class="material-symbols-outlined text-[14px]"
-                        >chevron_right</span
-                      >
-                    </a>
-                  </div>
-                </article>
-                <!-- Article 3 -->
-                <article
-                  class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow"
-                >
-                  <div class="relative aspect-[16/10]">
-                    <img
-                      class="w-full h-full object-cover"
-                      alt="Politeknik Surabaya Siap Berkolaborasi dengan Politeknik NSC Surabaya"
-                      src="assets/images/berita-kolaborasi-utama.jpg"
-                    />
                     <span
-                      class="absolute top-3 left-3 bg-surface-variant text-primary text-caption font-bold px-2.5 py-0.5 rounded-full"
+                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
+                      >Profesional</span
                     >
-                      Kerja Sama
-                    </span>
+                    <span
+                      class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-caption text-caption font-semibold"
+                      >Riset Terapan</span
+                    >
                   </div>
-                  <div class="p-6 flex flex-col justify-between flex-1">
-                    <div>
-                      <span
-                        class="font-caption text-caption text-outline mb-1 block"
-                        >Arsip Berita 2017</span
-                      >
-                      <h4
-                        class="font-headline-sm text-headline-sm font-bold text-primary mb-2 group-hover:text-primary transition-colors"
-                      >
-                        Politeknik Surabaya Siap Berkolaborasi dengan Politeknik
-                        NSC Surabaya
-                      </h4>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4"
-                      >
-                        Ketua Yayasan Surabaya Ir Juwono Saroso MM
-                        dan Direktur Politeknik NSC Surabaya Eko Tjiptojuwono
-                        SE, MM., sepakat menandatangani naskah MoU.
-                      </p>
-                    </div>
-                    <a
-                      class="font-label-sm text-caption font-semibold text-primary inline-flex items-center gap-1 mt-auto"
-                      href="berita-kolaborasi-politeknik-nsc.html">
-                      Baca Selengkapnya
-                      <span class="material-symbols-outlined text-[14px]"
-                        >chevron_right</span
-                      >
-                    </a>
-                  </div>
-                </article>
+                </div>
+                <div class="pt-2 mt-auto">
+                  <a
+                    class="inline-flex items-center font-label-lg text-label-lg font-bold text-primary group-hover:text-primary gap-2 transition-colors"
+                    href="bisnis-jasa-makanan.html"
+                  >
+                    <span>Pelajari Lebih Lanjut</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1141,62 +804,79 @@
                 Informasi yang Kamu Butuhkan
               </h2>
               <p class="font-body-md text-body-md text-on-surface-variant">
-                Akses cepat ke portal layanan akademik, administrasi
-                perkuliahan, dan publikasi jurnal ilmiah berkala Politeknik
-                Surabaya.
+                Akses cepat ke layanan akademik, program studi, publikasi
+                jurnal, dan informasi pendaftaran Politeknik Surabaya.
               </p>
             </div>
-            <!-- Grid of 8 Quick Access cards -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-              <!-- Item 1: Sertifikasi -->
+            <!-- Lima akses cepat: Info, Prodi, Visi & Misi, Jurnal, Pendaftaran -->
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-6">
+              <!-- Item 1: Info -->
               <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="sertifikasi"
-                href="sertifikasi-profesi.html"
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="info.html"
               >
                 <div
                   class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
                 >
                   <span class="material-symbols-outlined text-[28px]"
-                    >verified_user</span
+                    >info</span
                   >
                 </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
                 >
-                  Sertifikasi Profesi
-                </h4>
+                  Info
+                </h3>
                 <p class="font-caption text-caption text-on-surface-variant">
-                  Uji kompetensi terstandar BNSP
+                  Berita dan informasi kampus
                 </p>
               </a>
-              <!-- Item 2: Biaya Pendidikan -->
+              <!-- Item 2: Prodi -->
               <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="biaya-pendidikan"
-                href="biaya-pendidikan.html"
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="index.html#program-studi-pilihan"
               >
                 <div
                   class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
                 >
                   <span class="material-symbols-outlined text-[28px]"
-                    >account_balance</span
+                    >school</span
                   >
                 </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
                 >
-                  Biaya Pendidikan
-                </h4>
+                  Prodi
+                </h3>
                 <p class="font-caption text-caption text-on-surface-variant">
-                  Struktur SPP &amp; skema angsuran
+                  Jelajahi program studi pilihan
                 </p>
               </a>
-              <!-- Item 3: Jurnal MI -->
+              <!-- Item 3: Visi & Misi -->
               <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="jurnal-mi"
-                href="jurnal-mi.html"
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="visi-misi.html"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >flag</span
+                  >
+                </div>
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                >
+                  Visi &amp; Misi
+                </h3>
+                <p class="font-caption text-caption text-on-surface-variant">
+                  Komitmen &amp; tata nilai kampus
+                </p>
+              </a>
+              <!-- Item 4: Jurnal -->
+              <a
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="jurnal.html"
               >
                 <div
                   class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
@@ -1205,79 +885,34 @@
                     >menu_book</span
                   >
                 </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
                 >
-                  Jurnal MI
-                </h4>
+                  Jurnal
+                </h3>
                 <p class="font-caption text-caption text-on-surface-variant">
-                  Publikasi riset sistem informasi
+                  Publikasi jurnal ilmiah kampus
                 </p>
               </a>
-              <!-- Item 4: Jurnal TK -->
+              <!-- Item 5: Pendaftaran -->
               <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="jurnal-tk"
-                href="jurnal-tk.html"
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary col-span-2 md:col-span-1"
+                href="pendaftaran.html"
               >
                 <div
                   class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
                 >
                   <span class="material-symbols-outlined text-[28px]"
-                    >developer_board</span
+                    >how_to_reg</span
                   >
                 </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
+                <h3
+                  class="font-body-lg text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
                 >
-                  Jurnal TK
-                </h4>
+                  Pendaftaran
+                </h3>
                 <p class="font-caption text-caption text-on-surface-variant">
-                  Karya ilmiah teknik &amp; jaringan
-                </p>
-              </a>
-              <!-- Item 5: Jurnal KA -->
-              <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="jurnal-ka"
-                href="jurnal-ka.html"
-              >
-                <div
-                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >receipt_long</span
-                  >
-                </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
-                >
-                  Jurnal KA
-                </h4>
-                <p class="font-caption text-caption text-on-surface-variant">
-                  Riset akuntansi &amp; komputasi
-                </p>
-              </a>
-              <!-- Item 6: Plagiasi -->
-              <a
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-surface-container-highest/20 transition-all duration-200 flex flex-col items-center text-center group"
-                data-path="plagiasi"
-                href="layanan-bebas-plagiasi.html"
-              >
-                <div
-                  class="w-14 h-14 rounded-2xl bg-surface-container text-primary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >fact_check</span
-                  >
-                </div>
-                <h4
-                  class="font-headline-sm text-body-lg font-bold text-primary group-hover:text-primary transition-colors mb-1"
-                >
-                  Plagiasi
-                </h4>
-                <p class="font-caption text-caption text-on-surface-variant">
-                  Layanan uji orisinalitas karya
+                  Informasi penerimaan mahasiswa baru
                 </p>
               </a>
             </div>
@@ -1324,16 +959,9 @@
                 <div class="pt-4 flex flex-wrap gap-4">
                   <a
                     class="inline-flex items-center bg-surface-container-lowest text-primary hover:bg-surface-container focus-visible:bg-surface-container active:bg-surface-container-high active:scale-[0.98] font-label-lg text-label-lg px-8 py-3.5 rounded-xl font-bold shadow-lg transition-all duration-200"
-                    href="profil.html">
-                    Kenali Politeknik Surabaya
-                  </a>
-                  <a
-                    class="inline-flex items-center text-on-primary hover:text-on-primary-container focus-visible:text-on-primary-container active:text-on-primary-container font-label-lg text-label-lg px-6 py-3.5 transition-colors gap-2 rounded-xl"
-                    href="visi-misi.html">
-                    <span>Baca Dokumen Visi &amp; Misi</span>
-                    <span class="material-symbols-outlined text-[18px]"
-                      >east</span
-                    >
+                    href="visi-misi.html"
+                  >
+                    Visi &amp; Misi
                   </a>
                 </div>
               </div>
@@ -1663,19 +1291,20 @@
                 <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
+                <a class="hover:text-on-primary transition-colors" href="info.html">Info</a>
+              </li>
+              <li class="pt-3 font-label-md text-label-md font-semibold uppercase tracking-wider text-on-primary-container sm:col-span-2 lg:col-span-1">Program Studi</li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-kreatif.html">Bisnis Kreatif</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="index.html#program-studi-pilihan">Program Studi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
-              </li>
-              <li>
-                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
+                <a class="hover:text-on-primary transition-colors" href="jurnal.html">Jurnal</a>
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>

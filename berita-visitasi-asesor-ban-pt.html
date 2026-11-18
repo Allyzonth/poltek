@@ -1,11 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html class="light" lang="id">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
-    <title>Kegiatan Visitasi Tim Asesor BAN-PT â€” Politeknik Surabaya</title>
+    <title>Kegiatan Visitasi Tim Asesor BAN-PT | Politeknik Surabaya</title>
     <meta name="description" content="Berita, kegiatan, dan pengumuman resmi Politeknik Surabaya." />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -70,45 +70,42 @@
           >
           <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="sertifikasi"
+            data-path="info"
             data-nav-link
-            href="sertifikasi-profesi.html"
-            >Sertifikasi</a
+            href="info.html"
+            >Info</a
           >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="biaya-pendidikan"
-            data-nav-link
-            href="biaya-pendidikan.html"
-            >Biaya Pendidikan</a
+          <div
+            class="nav-item relative"
+            data-dropdown
+            data-nav-section="prodi"
           >
-          <a
+            <button
+              class="nav-trigger nav-link inline-flex items-center gap-1 px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="prodi-menu"
+              data-dropdown-toggle
+            >
+              Prodi
+              <span
+                class="material-symbols-outlined nav-arrow text-[18px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="prodi-menu" class="nav-dropdown">
+              <a class="nav-submenu-link" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="nav-submenu-link" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="nav-submenu-link" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-mi"
+            data-path="jurnal"
             data-nav-link
-            href="jurnal-mi.html"
-            >Jurnal MI</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-tk"
-            data-nav-link
-            href="jurnal-tk.html"
-            >Jurnal TK</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="jurnal-ka"
-            data-nav-link
-            href="jurnal-ka.html"
-            >Jurnal KA</a
-          >
-          <a
-            class="nav-link px-space-xs py-space-sm transition-colors text-on-surface-variant hover:text-on-surface"
-            data-path="plagiasi"
-            data-nav-link
-            href="layanan-bebas-plagiasi.html"
-            >Plagiasi</a
+            href="jurnal.html"
+            >Jurnal</a
           >
         </nav>
         <div class="flex items-center gap-space-sm">
@@ -197,45 +194,38 @@
           >
           <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="sertifikasi-profesi.html"
-            data-path="sertifikasi"
+            href="info.html"
+            data-path="info"
             data-nav-link
-            >Sertifikasi</a
+            >Info</a
           >
-          <a
+          <div class="mobile-nav-group" data-mobile-dropdown data-nav-section="prodi">
+            <button
+              class="mobile-nav-trigger flex w-full items-center justify-between rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-prodi-menu"
+              data-mobile-dropdown-toggle
+            >
+              <span>Prodi</span>
+              <span
+                class="material-symbols-outlined nav-arrow text-[20px]"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </button>
+            <div id="mobile-prodi-menu" class="mobile-submenu mt-1 space-y-1 pl-3" hidden>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="komputerisasi-akuntansi.html" data-path="prodi-komputerisasi-akuntansi" data-nav-link>Komputerisasi Akuntansi</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-kreatif.html" data-path="prodi-bisnis-kreatif" data-nav-link>Bisnis Kreatif</a>
+              <a class="mobile-nav-submenu-link flex items-center rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface" href="bisnis-jasa-makanan.html" data-path="prodi-bisnis-jasa-makanan" data-nav-link>Bisnis Jasa Makanan <span class="status-badge">Dalam Pengembangan</span></a>
+            </div>
+          </div>
+                    <a
             class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="biaya-pendidikan.html"
-            data-path="biaya-pendidikan"
+            href="jurnal.html"
+            data-path="jurnal"
             data-nav-link
-            >Biaya Pendidikan</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-mi.html"
-            data-path="jurnal-mi"
-            data-nav-link
-            >Jurnal MI</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-tk.html"
-            data-path="jurnal-tk"
-            data-nav-link
-            >Jurnal TK</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="jurnal-ka.html"
-            data-path="jurnal-ka"
-            data-nav-link
-            >Jurnal KA</a
-          >
-          <a
-            class="mobile-nav-link flex items-center rounded-xl px-4 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors hover:bg-surface-container-low hover:text-on-surface"
-            href="layanan-bebas-plagiasi.html"
-            data-path="plagiasi"
-            data-nav-link
-            >Plagiasi</a
+            >Jurnal</a
           >
           <a
             class="mobile-nav-cta mt-4 flex items-center justify-center rounded-xl bg-secondary px-4 py-3 font-label-lg text-label-lg text-on-secondary transition-colors hover:bg-primary-hover"
@@ -258,7 +248,7 @@
             <ol class="flex flex-wrap items-center gap-2 font-caption text-caption text-outline">
               <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
               <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
-              <li><a class="hover:text-primary transition-colors" href="berita.html">Berita Kampus</a></li>
+              <li><a class="hover:text-primary transition-colors" href="info.html">Berita Kampus</a></li>
               <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] block">chevron_right</span></li>
               <li><span aria-current="page" class="text-primary font-semibold">Visitasi Asesor BAN-PT</span></li>
             </ol>
@@ -267,7 +257,7 @@
 
         <article class="pt-8 pb-12 bg-surface">
           <div class="max-w-4xl mx-auto px-margin-mobile lg:px-margin">
-            <a class="inline-flex items-center gap-2 font-label-lg text-label-lg font-bold text-primary hover:text-primary transition-colors mb-8" href="berita.html">
+            <a class="inline-flex items-center gap-2 font-label-lg text-label-lg font-bold text-primary hover:text-primary transition-colors mb-8" href="info.html">
               <span class="material-symbols-outlined text-[18px]">arrow_back</span>
               Kembali ke Daftar Berita
             </a>
@@ -308,7 +298,7 @@
             </div>
 
             <div class="mt-10 pt-8 border-t border-surface-container">
-              <a class="inline-flex items-center gap-2 bg-secondary hover:bg-primary-hover text-on-secondary hover:text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-xl font-semibold transition-colors" href="berita.html">
+              <a class="inline-flex items-center gap-2 bg-secondary hover:bg-primary-hover text-on-secondary hover:text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-xl font-semibold transition-colors" href="info.html">
                 <span class="material-symbols-outlined text-[18px]">arrow_back</span>
                 Kembali ke Daftar Berita
               </a>
@@ -376,19 +366,20 @@
                 <a class="hover:text-on-primary transition-colors" href="index.html">Beranda</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="profil.html">Profil</a>
+                <a class="hover:text-on-primary transition-colors" href="info.html">Info</a>
+              </li>
+              <li class="pt-3 font-label-md text-label-md font-semibold uppercase tracking-wider text-on-primary-container sm:col-span-2 lg:col-span-1">Program Studi</li>
+              <li>
+                <a class="hover:text-on-primary transition-colors" href="komputerisasi-akuntansi.html">Komputerisasi Akuntansi</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="visi-misi.html">Visi &amp; Misi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-kreatif.html">Bisnis Kreatif</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="index.html#program-studi-pilihan">Program Studi</a>
+                <a class="hover:text-on-primary transition-colors" href="bisnis-jasa-makanan.html">Bisnis Jasa Makanan</a>
               </li>
               <li>
-                <a class="hover:text-on-primary transition-colors" href="sertifikasi-profesi.html">Sertifikasi</a>
-              </li>
-              <li>
-                <a class="hover:text-on-primary transition-colors" href="biaya-pendidikan.html">Biaya Pendidikan</a>
+                <a class="hover:text-on-primary transition-colors" href="jurnal.html">Jurnal</a>
               </li>
               <li>
                 <a class="hover:text-on-primary transition-colors" href="pendaftaran.html">Pendaftaran</a>
